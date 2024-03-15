@@ -9,7 +9,7 @@
           <a href="{{ site.feed.path | default: 'feed.xml' | absolute_url }}">
             <svg class="svg-icon orange">
               <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
-            </svg><span>Subscribe</span>
+            </svg><span>RSS feed</span>
           </a>
         </p>
       {%- if site.author %}
@@ -25,6 +25,21 @@
       </div>
       <div class="footer-col">
         <p>{{ site.description | escape }}</p>
+        <form
+  action="https://buttondown.email/api/emails/embed-subscribe/stickyweather"
+  method="post"
+  target="popupwindow"
+  onsubmit="window.open('https://buttondown.email/stickyweather', 'popupwindow')"
+  class="embeddable-buttondown-form"
+>
+  <label for="bd-email">Email (required)</label>
+  <input type="email" name="email" id="bd-email" style="width: 100px;" />
+  
+  <input type="submit" value="Subscribe" class="button" />
+  <p>
+    <a href="https://buttondown.email/refer/stickyweather" target="_blank">Powered by Buttondown.</a>
+  </p>
+</form>
       </div>
     </div>
 
