@@ -37,8 +37,8 @@ layout: base
         {%- for featured_image in page.featured_image -%}
            <div>
             <picture>
-              <source type="image/webp" srcset="{{ featured_image }}" alt="" title="">
-              <img src="{{ featured_image }}">
+              <source type="image/webp" srcset="{{ featured_image }}">
+              <img src="{{ featured_image }}" alt="" loading="lazy">
             </picture>
            </div>
          {%- endfor -%}
