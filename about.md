@@ -21,7 +21,7 @@ Subscribe to get full access to the newsletter and website. Never miss an update
   <label for="bd-email">Enter your email</label>
   <input type="email" name="email" id="bd-email" />
   
-  <input type="submit" value="Subscribe" />
+  <input type="submit" value="Subscribe" class="button" />
   <p>
     <a href="https://buttondown.email/refer/stickyweather" target="_blank">Powered by Buttondown.</a>
   </p>
