@@ -1,6 +1,12 @@
 ---
 layout: post
 title: Sticky Weather is Evolving
+featured_image: /assets/media/Sticky-Weather-is-Evolving.webp
+image_credit: >
+photographer: Kelly Sikkema
+photo_source: https://unsplash.com/@kellysikkema
+excerpt: I'm changing my approach to make the newsletter more engaging, informative, and sustainable.
+description: I'm changing my approach to make the newsletter more engaging, informative, and sustainable.
 date: October 10, 2023
 author: Forrest Brown
 ---

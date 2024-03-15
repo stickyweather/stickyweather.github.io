@@ -5,6 +5,13 @@ layout: base
 
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p>
+      {%- if page.excerpt -%}
+        {% for excerpt in page.excerpt %}
+           <span class="">{{ excerpt }}</span>
+        {% endfor %}
+      {%- endif -%}
+    </p>
     <p class="post-meta">
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
@@ -23,7 +30,23 @@ layout: base
             <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
             {%- if forloop.last == false %}, {% endif -%}
         {% endfor %}
-      {%- endif -%}</p>
+      {%- endif -%}
+    </p>
+    <figure>  
+      {%- if page.featured_image -%}
+        {%- for featured_image in page.featured_image -%}
+           <div>
+            <picture>
+              <source type="image/webp" srcset="{{ featured_image }}" alt="" title="">
+              <img src="{{ featured_image }}">
+            </picture>
+           </div>
+         {%- endfor -%}
+      {%- endif -%}
+      {%- if page.image_credit -%}
+          <figcaption>{%- for photographer in page.photographer -%}<span>Photo by {{ photographer }} </span>{%- endfor -%}<span>{%- for photo_source in page.photo_source -%} (<a href="{{ photo_source }}" target="_blank">Source</a>){%- endfor -%}</span></figcaption>
+      {%- endif -%}
+      </figure>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
