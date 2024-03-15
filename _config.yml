@@ -1,14 +1,12 @@
-title: Your awesome title
+title: Sticky Weather
 author:
-  name: GitHub User
-  email: your-email@domain.com
+  name: Forrest Brown
+  email: forrest@stickyweather.com
 
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description: >
-  Write an awesome description for your new site here. You can edit this line
-  in _config.yml. It will appear in your document head meta (for Google search
-  results) and in your feed.xml site description.
+  Sticky Weather is a blog and newsletter about the times we live in, usually with a focus on climate, urbanism, and the South.
 
 # Build settings
 
