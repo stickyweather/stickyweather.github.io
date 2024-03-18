@@ -21,6 +21,7 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 # Theme-specific settings
 
@@ -30,7 +31,7 @@ header_pages:
   - about.md
 
 # Set to `true` to show excerpts on the homepage.
-#show_excerpts: false
+show_excerpts: true
 
 # Minima specific settings, which are only available from Minima 3.0 onward.
 minima:
@@ -50,7 +51,9 @@ minima:
   #date_format: "%b-%d-%Y"
 
   # Generate social links in footer.
-  #social_links:
+  social_links:
+     - { platform: mastodon,       user_url: "https://theatl.social/@frrstbrwn" }
+     - { platform: bluesky,        user_url: "https://bsky.app/profile/frrstbrwn.bsky.social" }
   #  - { platform: devto,          user_url: "https://dev.to/jekyll" }
   #  - { platform: dribbble,       user_url: "https://dribbble.com/jekyll" }
   #  - { platform: facebook,       user_url: "https://www.facebook.com/jekyll" }
@@ -68,4 +71,4 @@ minima:
   #  - { platform: x,              user_url: "https://x.com/jekyllrb" }
   #  - { platform: youtube,        user_url: "https://www.youtube.com/jekyll" }
 
-
+google_analytics: G-LJVJ3F2J0L

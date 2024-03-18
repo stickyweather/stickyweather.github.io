@@ -6,6 +6,7 @@
   border-bottom: 1px solid $border-color-01;
   min-height: $spacing-unit * 1.865;
   line-height: $base-line-height * $base-font-size * 2.25;
+  background-color: #fecc1a;
 
   // Positioning context for the mobile navigation icon
   position: relative;
@@ -149,6 +150,11 @@
 
 .footer-col {
   margin-bottom: $spacing-unit * .5;
+  color: white;
+}
+
+.footer-col a {
+  color: white;
 }
 
 .footer-col-1,

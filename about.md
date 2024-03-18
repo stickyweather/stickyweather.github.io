@@ -8,7 +8,7 @@ It’s hot and getting hotter. Combine that heat with the humidity many of us ha
 
 The South is an enormous and diverse region, larger than Western Europe in terms of land area and consisting of a variety of cultures, climates, landscapes, and ecosystems. Climate change is and will continue to impact our region in a big way, and we have an important role to play as part of the solution.
 
-Sticky Weather features climate change reporting focused on the South, investigating climate and weather-related risks, holding the powerful accountable, and spotlighting stories of solutions and positive change. Sticky Weather was started in 2023 by Forrest Brown, a climate writer and creator of the podcast series [Stories for Earth](https://storiesforearth.com/){:target="_blank"}. Follow him on [Mastodon](https://theatl.social/@frrstbrwn){:target="_blank"}.
+Sticky Weather is a climate change blog focused on the South, discussing climate and weather-related risks, ranting about politics, and spotlighting stories of solutions and positive change. Sticky Weather was started in 2023 by Forrest Brown, a climate writer and creator of the podcast series [Stories for Earth](https://storiesforearth.com/){:target="_blank"}. Follow him on [Mastodon](https://theatl.social/@frrstbrwn){:target="_blank"}.
 ## Why subscribe?
 Subscribe to get full access to the newsletter and website. Never miss an update.
 <form

@@ -2,6 +2,7 @@
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
 .button {
   background-color: #fecc1a;
+  color: black;
   border: none;
   border-radius: 8px;
   padding: 2% 2% 2%;
@@ -10,4 +11,8 @@
 .button:hover {
     cursor: pointer;
     background-color: #FFB219;
+}
+
+footer {
+  background-color: #0d1117;
 }
