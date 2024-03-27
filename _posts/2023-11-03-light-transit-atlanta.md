@@ -45,7 +45,7 @@ Americans want transit systems like this, and overall there seems to be an encou
 Just take it from the popular YouTube channel Not Just Bikes, run by a Canadian guy who immigrated to the Netherlands with his family to chase the so-called Dutch Dream. One of his most recent videos was filmed in Germany, and it will
 
 give you second thoughts about one day owning a single-family home in the burbs so you can drive a gas-guzzling SUV an hour each way to work.
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6Vil5KC7Bl0?si=oVanmWyercAL9NT4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe style="max-width: 100%;" width="560" height="315" src="https://www.youtube.com/embed/6Vil5KC7Bl0?si=oVanmWyercAL9NT4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 Transit expansion projects like the one MARTA is about to begin with the BeltLine seem too good to be true in the US. And while that’s sad considering that comparable and even superior transit options are not uncommon in many other developed countries, it’s a cause for hope that things can get better here.
 
 Atlanta is very lucky to have visionaries among us like Ryan Gravel and the others involved with the BeltLine project who are working to make increased walkability and better transit a reality in our city. Maybe one day we’ll create our own version of the Dutch Dream, but for now, we’ll at least catch a glimpse of it.
