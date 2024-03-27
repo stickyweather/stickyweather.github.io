@@ -52,6 +52,18 @@ layout: base
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
+  <div>
+    <h3 class="read-more">More from Sticky Weather</h3>
+    {%- for post in site.posts limit:5 -%}
+    <ul>
+      <li>
+        <a class="keep-reading" href="{{ post.url | relative_url }}">
+          <p>{{ post.title | escape }}</p>
+        </a>
+      </li>
+    </ul>
+    {%- endfor -%}
+  </div>
 
   {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}
