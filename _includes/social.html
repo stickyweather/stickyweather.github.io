@@ -1,5 +1,12 @@
 <ul class="social-media-list">
-{%- for entry in site.minima.social_links -%}
-  {%- include social-item.html item = entry -%}
-{%- endfor -%}
+  <li>
+    <a rel="me" href="https://theatl.social/@frrstbrwn" target="_blank" title="mastodon">
+      {% include /social-icons/mastodon.svg %}
+    </a>
+  </li>
+  <li>
+    <a rel="me" href="https://bsky.app/profile/frrstbrwn.bsky.social" target="_blank" title="bluesky">
+      {% include /social-icons/bluesky.svg %}
+    </a>
+  </li>
 </ul>
