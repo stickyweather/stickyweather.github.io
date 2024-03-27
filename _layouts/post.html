@@ -55,9 +55,9 @@ layout: base
   <div>
     <h3 class="read-more">More from Sticky Weather</h3>
     {%- for post in site.posts limit:5 -%}
-    <ul>
+    <ul class="keep-reading">
       <li>
-        <a class="keep-reading" href="{{ post.url | relative_url }}">
+        <a href="{{ post.url | relative_url }}">
           <p>{{ post.title | escape }}</p>
         </a>
       </li>
