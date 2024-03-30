@@ -17,6 +17,10 @@
   height: 36px;
   content: url('https://stickyweather.com/assets/media/Sticky%20Weather%20WordMark.png');
   padding-top: 1.5em;
+
+  @media screen and (max-width: 450px) {
+    height: 28px;
+  }
 }
 
 .site-nav {
