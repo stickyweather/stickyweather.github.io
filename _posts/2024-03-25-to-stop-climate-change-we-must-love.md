@@ -77,7 +77,7 @@ This is what bioregionalism is all about—_paying attention_. And when you thin
 In a North American context, the Indigenous scientist and writer Robin Wall Kimmerer wrote in her excellent book _Braiding Sweetgrass_:
 > After all these generations since Columbus, some of the wisest of Native elders still puzzle over the people who came to our shores. They look at the toll on the land and say, “The problem with these new people is that they don’t have both feet on the shore. One is still on the boat. They don’t seem to know whether they’re staying or not.”
 
-Kimmerer urges North Americans of European descent to unlearn the colonist mindset and to embrace an indigenous mindset. For a country like the United States, which prides itself on being a nation of immigrants, this doesn’t mean appropriating Native American cultures—rather, Kimmerer means people need to learn how to become indigenous to a place in their own way.
+Kimmerer urges North Americans of European descent or otherwise to unlearn the colonist mindset and to embrace an indigenous mindset. For a country like the United States, which prides itself on being a nation of immigrants, this doesn’t mean appropriating Native American cultures—rather, Kimmerer means people need to learn how to become indigenous to a place in their own way.
 
 This is worthwhile for many reasons, but I bring it up here as a suggested response to solastalgia. It may seem counterintuitive considering that some of the people most prone to feelings of solastalgia are those who already feel more connected to the land, but I think one of the ways to work through this feeling of extreme uneasiness and disorientation is to renew one’s commitment to living in close relationship with the land.
 
