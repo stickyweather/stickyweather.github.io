@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sticky Weather is Evolving
-featured_image: /assets/media/Sticky-Weather-is-Evolving.webp
+featured_image: /assets/media/Sticky-Weather-is-Evolving
 image_credit: >
 photographer: Kelly Sikkema
 photo_source: https://unsplash.com/@kellysikkema

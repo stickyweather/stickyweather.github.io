@@ -1,7 +1,8 @@
 ---
 layout: post
 title: To Stop Climate Change, We Have to Learn How to Love
-featured_image: /assets/media/Arabia Mountain.webp
+featured_image: /assets/media/Arabia Mountain
+alt: Photo of a mini garden of wildflowers, sedum, and diamorpha at Arabia Mountain in Georgia.
 image_credit: >
 photographer: Forrest Brown
 photo_source: 

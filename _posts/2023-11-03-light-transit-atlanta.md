@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Atlanta is planning to build more light rail — that's a good thing
-featured_image: /assets/media/azeem-ahmad-zaheer-3emNOyhy7ak-unsplash(1).webp
+featured_image: /assets/media/azeem-ahmad-zaheer-3emNOyhy7ak-unsplash(1)
 image_credit: >
 photographer: Azeem Ahmad Zaheer
 photo_source: https://unsplash.com/photos/a-train-on-the-tracks-3emNOyhy7ak
