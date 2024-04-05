@@ -73,6 +73,10 @@
     line-height: $base-line-height;
     display: block;
     padding: 5px 10px;
+    font-family: 'Rokkitt', serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
 
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
@@ -124,6 +128,7 @@
 .site-footer {
   border-top: 1px solid $border-color-01;
   padding: $spacing-unit 0;
+  font-family: 'Rokkitt',serif;
 }
 
 .footer-heading {
@@ -132,19 +137,21 @@
 }
 
 .feed-subscribe .svg-icon {
-  padding: 5px 5px 2px 0
+  padding: 5px 5px 2px 0px;
 }
 
 .contact-list,
 .social-media-list {
   list-style: none;
   margin-left: 0;
+  font-size: 16px;
 }
 
 .footer-col-wrapper,
 .social-links {
   @include relative-font-size(0.9375);
   color: $brand-color;
+  font-size: 16px;
 }
 
 .footer-col {
@@ -228,8 +235,10 @@
 }
 
 .post-meta {
-  font-size: $small-font-size;
+  font-size: 16px;
   color: #595959;
+  font-family: 'Rokkitt', serif;
+  font-weight: 400;
 }
 
 .post-link {
