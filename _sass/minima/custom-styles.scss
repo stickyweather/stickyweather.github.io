@@ -27,3 +27,18 @@ footer {
   display: block;
   margin-left: 0;
 }
+
+.final-word::after {
+  content: url("/assets/media/Dogwood Blossom.png");
+  display: inline-block;
+  transform: scale(0.5);
+  vertical-align: middle;
+}
+
+.callout {
+  background-color: #FFE06F;
+  filter: drop-shadow(5px 5px 2px #66520A);
+  padding: 2%;
+  border: dotted black 2px;
+  font-weight: 600;
+}
