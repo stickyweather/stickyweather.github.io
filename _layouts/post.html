@@ -55,6 +55,7 @@ layout: base
   <div>
     <h3 class="read-more">More from Sticky Weather</h3>
     {%- for post in site.posts limit:5 -%}
+    {% if post.url != page.url %}
     <ul class="keep-reading">
       <li>
         <a href="{{ post.url | relative_url }}">
@@ -62,6 +63,7 @@ layout: base
         </a>
       </li>
     </ul>
+    {% endif %}
     {%- endfor -%}
   </div>
 
