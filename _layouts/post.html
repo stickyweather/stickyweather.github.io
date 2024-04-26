@@ -13,6 +13,13 @@ layout: base
       {%- endif -%}
     </p>
     <p class="post-meta">
+      {%- if page.author -%}
+        {% for author in page.author %}
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">By <strong>{{ author }}</strong>, the founder of Sticky Weather and the former creator and host of the podcast <a href="https://storiesforearth.com" target="_blank"><strong>Stories for Earth</strong></a>. Forrest has also contributed to <em><a href="https://www.facingsouth.org/2023/07/ev-mega-deals-pit-states-against-souths-rural-communities" target="_blank"><strong>Facing South</strong></a></em> and the <em><a href="https://longnow.org/ideas/in-the-ministry-for-the-future-new-ideas-from-ancient-wisdom/" target="_blank"><strong>Long Now Foundation</strong></a></em>. He lives in Decatur, GA with his wife and cats.</span></span><br>
+            {%- if forloop.last == false %}, {% endif -%}
+        {% endfor %}
+      {%- endif -%}
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {{ page.date | date: date_format }}
@@ -23,13 +30,6 @@ layout: base
         <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
           {{ mdate | date: date_format }}
         </time>
-      {%- endif -%}
-      {%- if page.author -%}
-        • {% for author in page.author %}
-          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
-            {%- if forloop.last == false %}, {% endif -%}
-        {% endfor %}
       {%- endif -%}
     </p>
     <figure>  
