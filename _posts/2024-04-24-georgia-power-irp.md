@@ -34,7 +34,9 @@ Google, Microsoft, and Amazon have spent an objectively massive amount of money 
 
 Okay, so what?
 
-Well, Georgia Power ostensibly proposed this gas plant expansion and PPA deal to meet growing energy demand from new data centers and factories being built in the Peach State. Ironically, some of these factories have been hyped up for the clean tech they'll produce, like Hyundai's EV plant and the [Rivian plant](https://www.facingsouth.org/2023/07/ev-mega-deals-pit-states-against-souths-rural-communities){:target="_blank"} that has now been delayed.
+Well, Georgia Power ostensibly proposed this gas plant expansion and PPA deal to meet growing energy demand from new data centers and factories being built in the Peach State. Ironically, some of these factories have been hyped up for the clean tech they'll produce, like Hyundai's EV plant and the [Rivian plant](https://www.facingsouth.org/2023/07/ev-mega-deals-pit-states-against-souths-rural-communities){:target="_blank"} that has now been delayed. 
+
+{%- include inline-subscribe.html -%}
 
 It's hard to tell at this point how the corporations behind these factories and data centers will respond to this news, but I'm hopeful they will push Georgia Power to do better. I know that major tech companies, at least, have pretty aggressive renewable energy and water use goals for their data centers, so I would assume they won't be too jazzed to learn that a greater percentage of the electricity powering those data centers will come from fossil gas and coal.
 

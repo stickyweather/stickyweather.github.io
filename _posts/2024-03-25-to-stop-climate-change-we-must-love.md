@@ -49,6 +49,8 @@ The etymology of solastalgia comes in part from the word “nostalgia,” which,
 
 I’ve heard some people saying recently that Gen Z is the “nostalgia generation,” I guess because things are pretty shit right now and it’s comforting to indulge in old things or things from your childhood that bring you comfort. But unlike nostalgia, solastalgia isn’t comforting.
 
+{%- include inline-subscribe.html -%}
+
 The bittersweetness of nostalgia stems from knowing that you can’t ever return to the way things were before, but you can still sit with artifacts of fond memories that take you back—seeing your favorite cousin for the first time in years, hearing a song that helped get you through high school, the smell of your grandparents’ home. It’s sweet because you still have a piece of it as a reminder, but it’s bitter because you can’t have the whole thing.
 
 Solastalgia, to me, is a twist on this phenomenon. You can’t ever return to the way things were before, and the artifacts of fond memories you had are disappearing. That’s why the feeling is associated with anxiety, grief, disorientation—you have an urge or desire to revisit a fond memory or place, but you can’t. It’s the frustration of a strong emotion, bottled up with no where to go.

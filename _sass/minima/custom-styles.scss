@@ -37,8 +37,57 @@ footer {
 
 .callout {
   background-color: #FFE06F;
-  filter: drop-shadow(5px 5px 2px #66520A);
+
   padding: 2%;
   border: dotted black 2px;
   font-weight: 600;
+}
+
+.inline-subscribe {
+  background-color: #FFE06F;
+  border: dotted black 2px;
+  padding: 2% 10% 1% 10%;
+  margin-bottom: 1em;
+  text-align: center;
+  animation: fadein 2s;
+
+  #subscribe-header {
+    font-family: 'Rokkitt', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+  }
+
+  #subscribe-subheader {
+    font-family: 'Rokkitt', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  #subscribe-button {
+    background-color: #FF6D1E;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2% 2% 2%;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  #subscribe-button:hover {
+    background-color: #FF8009;
+    cursor: pointer;
+  }
+
+  #powered-by {
+    font-size: 14px;
+  }
+
+}
+
+#bd-email {
+  padding: 1% 0.5% 1%;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }

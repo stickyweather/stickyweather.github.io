@@ -58,6 +58,8 @@ Honestly, I was concerned to see this. NIMBYism has become a [serious hindrance 
 
 It’s true that these cases aren’t always as simple as a bunch of grouches wanting to rain on everyone’s parade (I’ve covered [NIMBYs that have some legitimate concerns](https://www.facingsouth.org/2023/07/ev-mega-deals-pit-states-against-souths-rural-communities){:target="_blank"}), but in the case of light rail on the BeltLine, it seems pretty clear that some well-to-do cranks got their panties in a wad.
 
+{%- include inline-subscribe.html -%}
+
 I tried to take a step back and keep an open mind. Like I said, these issues can be complex, and there are some groups opposed to sustainable infrastructure projects like light rail with very legitimate concerns.
 
 That sentiment kind of fell apart when I perused their website and read one of their objections being the questionable relevance of transit projects like light rail in the age of Lime scooters and autonomous vehicles, which, [everyone knows is going great](https://www.npr.org/2023/10/24/1208287502/california-orders-cruise-driverless-cars-off-the-roads-because-of-safety-concern){:target="_blank"}. I wish I were kidding.
