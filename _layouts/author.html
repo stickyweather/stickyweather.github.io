@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  {%- include author-schema.html -%}
+
+  <body>
+
+    {%- include header.html -%}
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <figure>  
+          {%- if page.gravatarimage -%}
+            {%- for gravatarimage in page.gravatarimage -%}
+               <div>
+                <picture>
+                  <source type="image/webp" srcset="{{ gravatarimage }}.webp">
+                  <img src="{{ gravatarimage }}.jpg" alt="{{ page.alt }}" loading="lazy">
+                </picture>
+               </div>
+             {%- endfor -%}
+          {%- endif -%}
+          {%- if page.image_credit -%}
+              <figcaption>{%- for photographer in page.photographer -%}<span>Photo by {{ photographer }} </span>{%- endfor -%}<span>{%- for photo_source in page.photo_source -%} (<a href="{{ photo_source }}" target="_blank">Source</a>){%- endfor -%}</span></figcaption>
+          {%- endif -%}
+          </figure>
+        <div>
+          <h1>{{ page.author | escape }}</h1>
+          <h4 style="text-transform: capitalize;">{{ page.jobtitle | escape }}</h4>
+          <div>
+            {%- if page.social -%}
+            <p><strong>Follow {{ page.author | escape }}:</strong> <a href="{{ page.social | escape }}" target="_blank">Mastodon</a></p>
+            {%- endif -%}
+          </div>
+        </div>
+        {{ content }}
+        <div>
+          <h2 class="">Latest by Forrest Brown</h2>
+          {%- for post in site.posts limit:5 -%}
+          {%- if post.author == "Forrest Brown" -%}
+          <ul class="keep-reading">
+            <li>
+              <a href="{{ post.url | relative_url }}">
+                <p>{{ post.title | escape }}</p>
+              </a>
+            </li>
+          </ul>
+          {%- endif -%}
+          {%- endfor -%}
+        </div>
+      </div>
+    </main>
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>
