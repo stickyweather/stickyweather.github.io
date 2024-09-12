@@ -20,6 +20,8 @@ There are many ways you can reduce the energy consumption of buildings, and one 
 
 I think Passive House design is really cool and makes a lot of sense, so I was surprised to discover that we just don’t build a lot of them in the US, especially not in the South. In this post, I want to explore why that is and how we can fix it.
 
+{%- include inline-subscribe.html -%}
+
 ## American buildings use a sh\*t ton of electricity
 
 Building electricity use gets accounted for under the “Residential & Commercial” economic sector in the EPA’s Inventory of US Greenhouse Gas Emissions and Sinks, which was responsible for 31% of greenhouse gas emissions in the US in 2022.
