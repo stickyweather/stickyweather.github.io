@@ -34,9 +34,11 @@ I rest in the grace of the world, and am free.</em>
 
 I’ve had people ask me before—mostly in my [podcasting days](https://storiesforearth.com){:target="_blank"}—about my take on hope. In the context of the climate crisis, what gives me hope? What advice do I have for others seeking it?
 
-It may not have been the answer some wanted to hear, but after a lot of personal reflection on the concept of “hope, I told people I thought hope was overrated. I still believe this. Of course, I didn’t stop there. I explained that, to me, hope is not some abstract thing that can be attained or a certain attitude or belief you can cultivate if you just try hard enough. “**Hope” is a verb**.
+It may not have been the answer some wanted to hear, but after a lot of personal reflection on the concept of “hope," I told people I thought hope was overrated. I still believe this. Of course, I didn’t stop there. I explained that, to me, hope is not some abstract thing that can be attained or a certain attitude or belief you can cultivate if you just try hard enough. “**Hope” is a verb**.
 
 A co-worker once (very kindly) gifted me a book called _Factfulness: Ten Reasons We’re Wrong About the World—And Why Things Are Better Than You Think_. (I was, uh, really going through it at the time, and my co-worker apparently picked up on that.) In _Factfulness_, the authors—Hans Rosling with Ola Rosling and Anna Rosling Rönnlund—argue that in spite of its myriad problems, the world is just really not that bad and that things are, on balance, actually way better than they used to be. It came with glowing praise from Bill and Melinda Gates.
+
+{%- include inline-subscribe.html -%}
 
 I’d heard many of the talking points Rosling employs in the book—a smaller percentage of people live in poverty now than ever before, infant mortality rates around the world are lower than ever, girls have more access to education in more places than ever, certain diseases that once plagued mankind have been eradicated, etc., etc.
 
@@ -55,12 +57,12 @@ By now you’re probably thinking that if this blog post was supposed to be clev
 So trying to stick to the facts is not a good formula for cultivating hope. Oh shit—it turns out to do quite the opposite. Now you’re wallowing in despair. “Doomscrolling” is a colloquialism recently inducted to the popular lexicon in the age of social media and polycrisis, and I think it’s an apt term to describe this phase of psychologically processing the true state of affairs _vis-à-vis_ climate change. It’s like passing a car crash on the highway—you can’t look away, but the more you look, the more disturbed you become. There’s a reason why the expression is “wallowing in misery.”
 
 If you ever watched the 2021 Bo Burnham Netflix special _Inside_, you will have witnessed a grown man experiencing the doomscrolling phase firsthand on a global stage. If you haven’t seen it, it’s a musical comedy, and I highly recommend it. In [one of the last songs](https://genius.com/Bo-burnham-all-eyes-on-me-lyrics){:target="_blank"}, Burnham sings:
-<div style="padding-left: 2rem; margin-bottom: 1rem;">
-You say the ocean’s rising like I give a shit<br>
-You say the whole world’s ending, honey, it already did<br>
-You’re not gonna slow it, heaven knows you tried<br>
-Got it? Good, now get inside
-</div>
+
+> You say the ocean’s rising like I give a shit<br>
+> You say the whole world’s ending, honey, it already did<br>
+> You’re not gonna slow it, heaven knows you tried<br>
+> Got it? Good, now get inside
+
 I loved _Inside_ because it perfectly captures the complex and difficult feelings so many people had during the pandemic, in the aftermath of George Floyd’s murder and the summer of protests, and in the final days of the Trump presidency when it truly felt like the country was teetering on the edge of a cliff. It was a time of extreme disillusion for a lot of Americans—especially, I think, white Americans who were realizing for the first time what many other people had already known.
 
 It was shocking and horrifying, and a lot of us really freaked out. I know I did, and I thought at the time that I already had a pretty good handle on how fucked the world is.
@@ -95,9 +97,9 @@ The work is:
 This is not an exhaustive list, but you get the point.
 
 There’s a book I picked up in Vancouver, BC a few years ago called—wait for it—_Learning to Die: Wisdom in the Age of Climate Crisis_ by Robert Bringhurst and Jan Zwicky. It’s a short little thing, small enough to fit in your back pocket, and not all of it is good. There was, however, one quote from Bringhurst’s contribution to it that stuck with me:
-<div style="padding-left: 2rem; margin-bottom: 1rem;">
-…We don’t have forever. Much more than half the time of life on earth is spent. Why make it any worse or briefer than it has to be? Let’s have more knowledge and less power. Let’s have more meaning and less control. Let’s have more truth, more birdsong, more reverential silence, and less jabber. You, your species, your entire evolutionary family, and your planet will die tomorrow. How do you want to spend today?
-</div>
+
+> …We don’t have forever. Much more than half the time of life on earth is spent. Why make it any worse or briefer than it has to be? Let’s have more knowledge and less power. Let’s have more meaning and less control. Let’s have more truth, more birdsong, more reverential silence, and less jabber. You, your species, your entire evolutionary family, and your planet will die tomorrow. How do you want to spend today?
+
 And that’s all.
 
 Was this post worth writing? Was it all just mealymouthed bumper stickers from a would-be Great Value Ram Dass? Maybe so. But so far it’s worked for me, and it might work for you, too. If not, so what? Forget I said anything. But I think you should at least give it a try.
