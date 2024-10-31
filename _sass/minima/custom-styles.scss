@@ -37,13 +37,14 @@ footer {
 
 .callout {
   background-color: #FFE06F;
-
+  color: $lm-text-color;
   padding: 2%;
   border: dotted black 2px;
   font-weight: 600;
 }
 
 .inline-subscribe {
+  color: $lm-text-color;
   background-color: #FFE06F;
   border: dotted black 2px;
   padding: 2% 10% 1% 10%;
