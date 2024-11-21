@@ -223,6 +223,7 @@
 
 .post-list-heading {
   @include relative-font-size(1.75);
+  border-bottom: solid lightgray 1px;
 }
 
 .post-list {

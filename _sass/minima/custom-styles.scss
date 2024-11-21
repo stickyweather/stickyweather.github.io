@@ -92,3 +92,97 @@ footer {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
+
+// Begin homepage styling
+.home {
+  display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: auto;
+    align-items: start;
+    grid-template-areas:
+      "recent-posts sidebar";
+}
+
+.recent-posts {
+  grid-area: recent-posts;
+  border-right: solid lightgray 1px;
+  margin-right: 1em;
+  padding-right: 1em;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.homepage-subscribe {
+  margin-top: 1em;
+  border-bottom: solid lightgray 1px;
+
+  #sidebar-subscribe-header {
+    font-size: $base-font-size * 1.1;
+  }
+
+  p {
+    font-size: $base-font-size * 1;
+  }
+
+  #subscribe-button {
+    background-color: #FF6D1E;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2% 2% 2%;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+}
+
+@include media-query($on-palm) {
+  .home {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-template-areas:
+          "recent-posts"
+          "sidebar";
+  }
+
+  .recent-posts {
+    border-right: none;
+  }
+  
+  .sidebar {
+    padding-left: 0;
+  }
+
+  .about-me {
+    font-size: $base-font-size;
+
+    h2 {
+      font-size: relative-font-size(1.75);
+    }
+
+  }
+
+  .homepage-subscribe {
+    #sidebar-subscribe-header {
+      font-size: $base-font-size;
+    }
+  }
+
+}
+.about-me {
+  border-bottom: solid lightgray 1px;
+  font-size: $base-font-size * 1;
+
+  h2 {
+    font-size: $base-font-size * 1.1;
+    border-bottom: solid lightgray 1px;
+  }
+
+}
+
+// End homepage styling

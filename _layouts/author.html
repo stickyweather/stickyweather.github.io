@@ -28,10 +28,9 @@
           </figure>
         <div>
           <h1>{{ page.author | escape }}</h1>
-          <h4 style="text-transform: capitalize;">{{ page.jobtitle | escape }}</h4>
           <div>
             {%- if page.social -%}
-            <p><strong>Follow {{ page.author | escape }}:</strong> <a href="{{ page.social | escape }}" target="_blank">Mastodon</a></p>
+            <p><strong>Follow:</strong> <a href="https://theatl.social/@frrstbrwn" target="_blank">Mastodon</a>, <a href="https://bsky.app/profile/frrstbrwn.bsky.social" target="_blank">Bluesky</a></p>
             {%- endif -%}
           </div>
         </div>

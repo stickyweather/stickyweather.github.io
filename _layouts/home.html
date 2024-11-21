@@ -9,7 +9,7 @@ layout: base
 
   {{ content }}
 
-
+<div class="recent-posts">
   {% if site.paginate %}
     {% assign posts = paginator.posts %}
   {% else %}
@@ -56,5 +56,10 @@ layout: base
     {%- endif %}
 
   {%- endif -%}
+</div>
+
+<div class="sidebar">
+  {% include sidebar.html %}
+</div>
 
 </div>
