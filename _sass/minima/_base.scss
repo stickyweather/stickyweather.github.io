@@ -201,7 +201,8 @@ pre {
  * Wrapper
  */
 .wrapper {
-  max-width: calc(#{$content-width} - (#{$spacing-unit}));
+  // max-width: calc(#{$content-width} - (#{$spacing-unit}));
+  max-width: calc(#{$content-width} - 400px);
   margin-right: auto;
   margin-left: auto;
   padding-right: $spacing-unit * .5;
