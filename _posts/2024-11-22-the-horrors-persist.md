@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The Horrors Persist, But So Do [We]
+audio: https://public.boxcloud.com/api/2.0/files/1707434344125/content?preview=true&version=1879654672125&access_token=1!qg36yDnpadBzbxMXR6BXVZrc_ShrDxicb9x8LdGWH9mkZ1Q5xb8ICawZZ7fEjbmXsh3eEDRtiuTa9m3wxLJ7-_sbUlGaqLuLXH9T0gPe727m58sNYJJQpUkBuegGTiRf2plUQZaMKe9_r_R_fdk_RJEd2Qy3fr1uf6L2zSK-UkYsv0X-hOsWwN1Hew2LHPEfAajRTT4F39ZWPYuu1DLV9CdUZObAqXwl-RqsKg3lDBNjxxLX8JAavwEL6sbal9npFmUy7CGI8ZLp91RSSFOMhX3Z8xGLChUil5tTgZlQpCrnbT88epkf6U-fdYr6rLaPhOo2crdJ05jPFRXcOgtcvdbkLCS2_iyVFBeL_AdGz2FhBF3FgGVtJ9nIfs13W76d31PH4o5xzBfEwMoXKZ_9Ag2lX8OuCWRvKHOMNB2bQQocJA4K3fnln_EPHrxcHrTAg_1Si4dnreeBXN1bA3stYHxrhKKknl4Ejr8a_lA9CkV7Behj29dEOLfeZ3945Xr6h_koCQdWvIg6xZD42bxxxjTfFe803klMga8K4rmL4fVANxvICkfdkhFKD-638Lmj0yHekOZ9XzwEt3SdhdiK6SPwa5-RbLNRztxDF4RvVoZAy2ZTkvbUYyWz64Q-Q09BgeiZ1vKn0SmJb3gxDKA-pOZPQ90Hd7C6XtSBjDya8Kvvrm7SYRxWk5EnoQrLGDVuR3whklvnxkVRMeVE-ty3AUiraCk.&box_client_name=box-content-preview&box_client_version=2.110.0
 featured_image: /assets/media/IMG_2685
 alt: An autumn sunset from a mountaintop overlooking the trees in North Georgia.
 image_credit: >
@@ -11,7 +12,6 @@ description: '"We know that there is no help for us but from one another, that n
 date: November 22, 2024
 author: Forrest Brown
 ---
-
 Hey everyone,
 
 How are y’all doing? I hope you’re hanging in there. It may be from last December, but I think this headline from _The Hard Times_ really captures the zeitgeist: “[American Psychological Association Announces ‘Feeling Like Dying But Not Really Suicidal’ New Baseline For Normal Mental Health](https://thehardtimes.net/culture/american-psychological-association-announces-feeling-like-dying-but-not-really-suicidal-new-baseline-for-normal-mental-health/){:target="_blank"}.”

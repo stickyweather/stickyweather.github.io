@@ -58,6 +58,16 @@
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
+    {%- if page.audio -%}
+      {%- for audio in page.audio -%}
+    <div>
+      <div><em>Listen to this article:</em></div>
+      <audio style="padding-bottom: 0.5em;" loading="lazy" controls>
+        <source src="{{ audio }}" type="audio/mpeg">
+      </audio>
+    </div>
+      {%- endfor -%}
+    {%- endif -%}
     {{ content }}
   </div>
   <div>
