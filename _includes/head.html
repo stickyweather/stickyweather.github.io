@@ -8,6 +8,9 @@
   <meta property="og:image" content="{{ page.featured_image }}.jpg" />
   <meta name="twitter.image" content="{{ pae.featured_image }}.jpg" />
   {%- endif -%}
+  {%- if page.author -%}
+  <meta name="fediverse:creator" content="@frrstbrwn@theatl.social" />
+  {%- endif -%}
   <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
