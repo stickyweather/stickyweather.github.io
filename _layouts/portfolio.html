@@ -1,0 +1,32 @@
+---
+layout: base
+---
+<article class="post">
+
+  <header class="post-header">
+    <div class="profile-header">
+      {%- if page.featured_image -%}
+      <figure class="portfolio-photo">
+        <picture>
+          <source type="image/webp" srcset="{{ page.featured_image }}">
+          <source type="image/jpeg" srcset="{{ page.featured_image }}">
+          <img src="{{ page.featured_image }}" alt="{{ page.alt }}" style="border-radius: 50%;">
+        </picture>
+      </figure>
+      {%- endif -%}
+    <div class="profile-details">
+      <h1 class="portfolio-title">{{ page.title | escape }}</h1>
+      <div class="portfolio-bio">{{ page.description | escape }}</div>
+      <div class="portfolio-linkedin"><strong><span style="padding-right: 0.5em;">Connect:</span></strong><a rel="me" href="{{ page.linkedin | escape }}" target="_blank"><svg class="svg-icon" xmlns="http://www.w3.ord/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="17px" viewBox="0 0 16 17">{% include /social-icons/linkedin.svg %}</svg></a></div>
+      <div class="portfolio-contact">
+        <a href="mailto:{{ page.contact | escape }}"><button>Contact</button></a>
+      </div>
+    </div>
+    </div>
+  </header>
+  <h2>Portfolio</h2>
+  <div>
+    {% include /portfolio-items.html %}
+  </div>
+
+</article>

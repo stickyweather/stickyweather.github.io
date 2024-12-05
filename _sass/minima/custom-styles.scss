@@ -208,6 +208,194 @@ footer {
 
   }
 
-
-
 // End homepage styling
+
+// Begin portfolio styling
+
+.profile-header {
+  display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+    column-gap: 10%;
+  border-bottom: solid dimgray 1px;
+  padding-bottom: 2%;
+
+  @include media-query($on-palm) {
+    padding-bottom: 5em;
+  }
+
+}
+
+.profile-details {
+  display: inline-grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 1fr 0.5fr 0.5fr;
+  row-gap: 2%;
+
+  @include media-query($on-palm) {
+    grid-template-rows: 15% 70% 15%;
+  }
+
+}
+
+.portfolio-photo {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: start;
+}
+
+.portfolio-title {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.portfolio-bio {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.portfolio-linkedin {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+
+.portfolio-contact {
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+
+  button {
+    background-color: $brand-color;
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    font-weight: 700;
+    color: black;
+    border: none;
+    padding: 1% 2% 1%;
+    border-radius: 8px;
+  }
+
+  button:hover {
+    background-color: #FFB219;
+    cursor: pointer;
+  }
+
+  @include media-query($on-palm) {
+    button {
+      padding: 3% 10% 3%;
+    }
+  }
+
+}
+
+.featured_content {
+  display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      column-gap: 3%;
+      row-gap: 3%;
+      padding-bottom: 2em;
+  
+  @include media-query($on-palm) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .client-attribution {
+    color: dimgray;
+    font-size: $base-font-size*0.9;
+  }
+
+  .content-date {
+    color: dimgray;
+    font-size: $base-font-size*0.9;
+  }
+
+  div {
+
+    a {
+      color: black;
+      }
+
+    }
+
+  #content1 {
+    grid-column: 1;
+    grid-row: 1;
+
+    @include media-query($on-palm) {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+  }
+
+  #content2 {
+    grid-column: 2;
+    grid-row: 1;
+
+    @include media-query($on-palm) {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+  }
+
+  #content3 {
+    grid-column: 3;
+    grid-row: 1;
+
+    @include media-query($on-palm) {
+      grid-column: 1;
+      grid-row: 3;
+    }
+
+  }
+
+  #content4 {
+    grid-column: 1;
+    grid-row: 2;
+
+    @include media-query($on-palm) {
+      grid-column: 1;
+      grid-row: 4;
+    }
+
+  }
+
+  #content5 {
+    grid-column: 2;
+    grid-row: 2;
+
+    @include media-query($on-palm) {
+      grid-column: 1;
+      grid-row: 5;
+    }
+
+  }
+
+  #content6 {
+    grid-column: 3;
+    grid-row: 2;
+
+    @include media-query($on-palm) {
+      grid-column: 1;
+      grid-row: 6;
+    }
+
+  }
+
+  #content7 {
+    grid-column: 1;
+    grid-row: 3;
+
+    @include media-query($on-palm) {
+      grid-column: 1;
+      grid-row: 7;
+    }
+
+  }
+
+}
+
+// End portfolio styling
