@@ -3,6 +3,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="assets/media/StickyWeather Favicon.png">
+  {%- if page.robots -%}
+  <meta name="robots" content="{{ page.robots }}">
+  {%- endif -%}
   {%- seo -%}
   {%- if page.featured_image -%}
   <meta property="og:image" content="{{ page.featured_image }}.jpg" />

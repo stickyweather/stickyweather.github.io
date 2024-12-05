@@ -1,5 +1,6 @@
 ---
 layout: portfolio
+robots: noindex, nofollow
 title: Forrest Brown
 featured_image: /assets/media/Brown, Forrest(1).jpg
 alt: Professional headshot of Forrest Brown.
