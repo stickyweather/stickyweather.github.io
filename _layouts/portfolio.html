@@ -6,13 +6,7 @@ layout: base
   <header class="post-header">
     <div class="profile-header">
       {%- if page.featured_image -%}
-      <figure class="portfolio-photo">
-        <picture>
-          <source type="image/webp" srcset="{{ page.featured_image }}">
-          <source type="image/jpeg" srcset="{{ page.featured_image }}">
-          <img src="{{ page.featured_image }}" alt="{{ page.alt }}" style="border-radius: 50%;">
-        </picture>
-      </figure>
+      <img class="portfolio-photo" src="{{ page.featured_image }}" alt="{{ page.alt }}" style="border-radius: 50%">
       {%- endif -%}
     <div class="profile-details">
       <h1 class="portfolio-title">{{ page.title | escape }}</h1>
@@ -25,7 +19,7 @@ layout: base
     </div>
   </header>
   <h2>Portfolio</h2>
-  <div>
+  <div style="padding-bottom: 2em;">
     {% include /portfolio-items.html %}
   </div>
 

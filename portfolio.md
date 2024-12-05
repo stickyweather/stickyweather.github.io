@@ -1,7 +1,7 @@
 ---
 layout: portfolio
 title: Forrest Brown
-featured_image: https://media.licdn.com/dms/image/v2/C4D03AQG1vCNIfhyfVg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1648646401284?e=1738800000&v=beta&t=ABsjwLpwzwYP2nMKVnuN6HkAFgtDZoyOjyY_pQa5J7U
+featured_image: /assets/media/Brown, Forrest(1).jpg
 alt: Professional headshot of Forrest Brown.
 contact: forrestbrownwrites@gmail.com
 linkedin: https://www.linkedin.com/in/forrest-brown/
