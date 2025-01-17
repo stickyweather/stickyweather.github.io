@@ -10,6 +10,7 @@ excerpt: Solastalgia can be an overwhelming feeling—here's how I think we can 
 description: When struggling with feelings of loss and disorientation at our changing world, our best chance to make a difference is to learn to love it intensely.
 date: March 25, 2024
 author: Forrest Brown
+robots: index, follow
 ---
 
 Easter is this coming weekend. Growing up, Easter stands out in my memory not just for the egg hunts and pastel colors but also for the weather.

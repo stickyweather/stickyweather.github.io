@@ -1,7 +1,6 @@
 ---
 layout: post
 title: My Essay Featured in the Inaugural Issue of ‘Pace Layers’ from The Long Now Foundation
-audio: 
 featured_image: /assets/media/Pace Layers
 alt: A person holds up a copy of Pace Layers against a green wall.
 image_credit: >
@@ -11,6 +10,7 @@ excerpt: When we are bound in a system of reciprocity, not return on investment,
 description: Learn more about the inclusion of my essay in the inaugural issue of Pace Layers, out now from The Long Now Foundation.
 date: December 3, 2024
 author: Forrest Brown
+robots: index, follow
 ---
 
 Last October, I was delighted to have an essay I wrote published in the Ideas section of The Long Now Foundation’s website. I had recently finished reading _The Ministry for the Future_ by Kim Stanley Robinson, and my head was swimming with ideas that I would normally share through my podcast, Stories for Earth.

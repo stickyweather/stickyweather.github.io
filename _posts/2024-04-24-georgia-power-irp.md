@@ -10,6 +10,7 @@ excerpt: Georgia Power is planning to burn more fossil fuels—that's unacceptab
 description: The Georgia Public Service Commission recently voted to approve a new integrated resource plan from Georgia Power that includes a gas plant expansion and PPAs for dirty energy.
 date: April 24, 2024
 author: Forrest Brown
+robots: index, follow
 ---
 
 Last week, state regulators from the Georgia Public Service Commission (GPSC) [voted to approve Georgia Power's plans](https://www.wabe.org/commission-approves-georgia-power-deal-to-expand-power-plant-buy-electricity/){:target="_blank"} to expand a fossil fuel power plant and to buy dirty energy from other regional utility companies.

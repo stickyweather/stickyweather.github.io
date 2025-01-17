@@ -9,6 +9,7 @@ excerpt: MARTA surveyors in Atlanta began walking the Eastside BeltLine this pas
 description: MARTA surveyors in Atlanta began walking the Eastside BeltLine this past October to kick off a long-awaited light rail project.
 date: November 3, 2023
 author: Forrest Brown
+robots: index, follow
 ---
 Ah, Atlanta. The city where I was born, and the city where I now live.
 

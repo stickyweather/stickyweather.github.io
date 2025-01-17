@@ -10,6 +10,7 @@ excerpt: Let's be honest—it's easy to feel despair when talking about climate 
 description: Let's be honest—it's easy to feel despair when talking about climate change. But there is a way to move past it, and it's not positive climate stories.
 date: October 27, 2024
 author: Forrest Brown
+robots: index, follow
 ---
 
 <div style="padding: 0 15% 2% 15%; border-bottom: solid dimgray 1px; margin-bottom: 5%;">

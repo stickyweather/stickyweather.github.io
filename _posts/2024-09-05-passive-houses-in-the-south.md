@@ -10,6 +10,7 @@ excerpt: Passive houses are energy efficient, comfortable, and relatively inexpe
 description: Passive houses are built to a very high design standard that makes them super energy efficient while remaining comfortable and relatively affordable. Why aren’t we building them?
 date: September 5, 2024
 author: Forrest Brown
+robots: index, follow
 ---
 
 I know this may come as a shock, but I have an ax to grind.
