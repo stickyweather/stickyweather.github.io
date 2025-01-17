@@ -9,6 +9,7 @@ excerpt: I'm changing my approach to make the newsletter more engaging, informat
 description: I'm changing my approach to make the newsletter more engaging, informative, and sustainable.
 date: October 10, 2023
 author: Forrest Brown
+robots: index, follow
 ---
 
 Hello friends,

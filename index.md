@@ -6,5 +6,7 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 #
 layout: home
+title: Sticky Weather
 list_title: Recent posts
+robots: index, follow
 ---
