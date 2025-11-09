@@ -6,7 +6,7 @@ featured_image: /assets/media/SC269804
 alt: Painting by Jean-François Millet of a European peasant sowing millet seeds.
 image_credit: >
 photographer: Jean-François Millet
-photo_source: Museum of Fine Arts Boston
+photo_source: https://collections.mfa.org/objects/31601
 excerpt: I am working to unlearn the harmful habits our specialist culture instills in us.
 description: I am working to unlearn the harmful habits our specialist culture instills in us.
 date: December 31, 2024
