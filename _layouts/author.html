@@ -11,28 +11,43 @@
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <figure>  
-          {%- if page.gravatarimage -%}
-            {%- for gravatarimage in page.gravatarimage -%}
+        {%- assign author = site.authors | where: "name", "Forrest Brown" | first -%}
+        <figure>
+          {%- if author.gravatarimage -%}
+            {%- for gravatarimage in author.gravatarimage -%}
                <div>
                 <picture>
                   <source type="image/webp" srcset="{{ gravatarimage }}.webp">
-                  <img src="{{ gravatarimage }}.jpg" alt="{{ page.alt }}" style="border-radius: 50%;">
+                  <img src="{{ gravatarimage }}.jpg" alt="A photo of {{ author.name }}." style="border-radius: 50%;">
                 </picture>
                </div>
              {%- endfor -%}
           {%- endif -%}
-          {%- if page.image_credit -%}
-              <figcaption>{%- for photographer in page.photographer -%}<span>Photo by {{ photographer }} </span>{%- endfor -%}<span>{%- for photo_source in page.photo_source -%} (<a href="{{ photo_source }}" target="_blank">Source</a>){%- endfor -%}</span></figcaption>
-          {%- endif -%}
           </figure>
         <div>
-          <h1>{{ page.author | escape }}</h1>
-          <div>
-            {%- if page.social -%}
-            <p><strong>Follow:</strong> <a href="https://theatl.social/@frrstbrwn" target="_blank">Mastodon</a>, <a href="https://bsky.app/profile/frrstbrwn.bsky.social" target="_blank">Bluesky</a></p>
+            {%- if author -%}
+            <h1>{{ author.name }}</h1>
             {%- endif -%}
-          </div>
+
+            <div>
+            {%- if author.mastodon -%}
+            <a href="{{ author.mastodon.url }}" target="_blank">Mastodon</a>
+            {%- endif -%}
+
+            {%- if author.bluesky -%}
+            , <a href="{{ author.bluesky.url }}" target="_blank">Bluesky</a> 
+            {%- endif -%}
+
+            {%- if author.facebook -%}
+            , <a href="{{ author.facebook.url }}" target="_blank">Facebook</a>
+            {%- endif -%}
+            </div>
+
+            {%- if author.bio -%}
+            <h2>Biography:</h2>
+            <div>{{ author.bio }}</div>
+            {%- endif -%}
+
         </div>
         {{ content }}
         <div>
