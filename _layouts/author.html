@@ -31,15 +31,15 @@
 
             <div>
             {%- if author.mastodon -%}
-            <a href="{{ author.mastodon.url }}" target="_blank">Mastodon</a>
+            <a href="{{ author.mastodon }}" target="_blank">Mastodon</a>
             {%- endif -%}
 
             {%- if author.bluesky -%}
-            , <a href="{{ author.bluesky.url }}" target="_blank">Bluesky</a> 
+            , <a href="{{ author.bluesky }}" target="_blank">Bluesky</a> 
             {%- endif -%}
 
             {%- if author.facebook -%}
-            , <a href="{{ author.facebook.url }}" target="_blank">Facebook</a>
+            , <a href="{{ author.facebook }}" target="_blank">Facebook</a>
             {%- endif -%}
             </div>
 
