@@ -18,39 +18,51 @@
                <div>
                 <picture>
                   <source type="image/webp" srcset="{{ gravatarimage }}.webp">
-                  <img src="{{ gravatarimage }}.jpg" alt="A photo of {{ author.name }}." style="border-radius: 50%;">
+                  <img src="{{ gravatarimage }}.jpg" alt="A photo of {{ author.name }}." style="border-radius: 50%; aspect-ratio: 1 / 1; width: 90px;">
                 </picture>
                </div>
              {%- endfor -%}
           {%- endif -%}
           </figure>
-        <div>
+        <div class="author-title-wrapper">
+        <div class="author-details">
             {%- if author -%}
             <h1>{{ author.name }}</h1>
             {%- endif -%}
-
-            <div>
-            {%- if author.mastodon -%}
-            <a href="{{ author.mastodon }}" target="_blank">Mastodon</a>
-            {%- endif -%}
-
-            {%- if author.bluesky -%}
-            , <a href="{{ author.bluesky }}" target="_blank">Bluesky</a> 
-            {%- endif -%}
-
-            {%- if author.facebook -%}
-            , <a href="{{ author.facebook }}" target="_blank">Facebook</a>
+            {%- if author.jobtitle -%}
+            <div class="author-jobtitle">{{ author.jobtitle }}</div>
             {%- endif -%}
             </div>
-
-            {%- if author.bio -%}
-            <h2>Biography:</h2>
-            <div>{{ author.bio }}</div>
-            {%- endif -%}
-
+            <div class="author-socials">
+            <div class="author-follow-col">
+              <ul class="contact-list">
+                <li>
+                  <ul class="author-social-media-list">
+                    <li>
+                      {%- if author.mastodon -%}
+                      <a href="{{ author.mastodon }}" target="_blank" title="mastodon">{% include /social-icons/mastodon.svg %}</a>
+                     {%- endif -%}
+                    </li>
+                    <li>
+                     {%- if author.bluesky -%}
+                     <a href="{{ author.bluesky }}" target="_blank" title="blueskey">{%- include /social-icons/bluesky.svg -%}</a> 
+                     {%- endif -%}
+                    </li>
+                    <li>
+                     {%- if author.facebook -%}
+                     <a href="{{ author.facebook }}" target="_blank" title="facebook">{%- include /social-icons/facebook.svg -%}</a> 
+                     {%- endif -%}
+                    </li>
+                  </ul>
+                </li>
+              </ul>  
+          </div>
         </div>
-        {{ content }}
-        <div>
+      </div>
+              {%- if author.bio -%}
+        <div>{{ author.bio }}</div>
+        {%- endif -%}  
+      <div>
           <h2 class="">Latest by Forrest Brown</h2>
           {%- for post in site.posts limit:5 -%}
           {%- if post.author == "Forrest Brown" -%}

@@ -108,6 +108,63 @@ footer {
   }
 }
 
+// Begin author page styling
+.author-title-wrapper {
+  display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto;
+    align-items: start;
+    border-bottom: solid lightgray 1px;
+    margin-bottom: 1em;
+    grid-template-areas:
+      "author-details author-socials";
+}
+
+.author-details {
+  grid-area: author-details;
+
+  h1 {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+
+}
+
+.author-socials {
+  grid-area: author-socials;
+}
+
+.author-follow-col {
+  margin-bottom: $spacing-unit * .5;
+}
+
+.author-jobtitle {
+  color: lighten($text-color, 25%);
+  font-family: 'Rokkitt', sans-serif;
+}
+
+.author-social-media-list {
+  list-style: none;
+  display: table;
+  margin: 0;
+  li {
+    float: left;
+    margin: 5px 10px 5px 0;
+    &:last-of-type { margin-right: 0 }
+    a {
+      display: block;
+      padding: 0px 12px;
+      border: none;
+      &:hover { border-color: $border-color-02 }
+    }
+    svg path {
+      fill: black !important;
+    }
+  }
+}
+// End author page styling
+
+
 // Begin homepage styling
 .home {
   display: grid;
@@ -120,7 +177,6 @@ footer {
 
 .recent-posts {
   grid-area: recent-posts;
-  border-right: solid lightgray 1px;
   margin-right: 1em;
   padding-right: 1em;
 }

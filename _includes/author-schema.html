@@ -1,15 +1,19 @@
 <script type="application/ld+json">
-    {
-      "@context": "https://schema.org/",
-      "@type": "Person",
-      "name": "{{ page.author | escape }}",
-      "url": "{{ page.gravatar | escape }}",
-      "image": "{{ page.gravatarimage | escape }}",
-      "sameAs": "{{ page.social | escape }}",
-      "jobTitle": "{{ page.jobtitle | escape }}",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Sticky Weather"
-      }  
-    }
-    </script>
+{
+  {%- assign author = site.authors | where: "name", page.name | first -%}
+  "@context": "https://schema.org/",
+  "@type": "Person",
+  "name": {{ author.name | escape | jsonify }},
+  "description": {{ author.bio | escape | jsonify }},
+  "url": {{ author.gravatar | escape | jsonify }},
+  "image": {{ author.gravatarimage | escape | jsonify }},
+  {%- if author.mastodon -%}
+  "sameAs": {{ author.mastodon.url | escape | jsonify }},
+  {%- endif -%}
+  "jobTitle": {{ author.jobtitle | escape | jsonify }},
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Sticky Weather"
+  }
+}
+</script>
