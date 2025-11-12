@@ -71,6 +71,10 @@
     {{ content }}
   </div>
   <div>
+    <h3 class="read-more">Discussion about this post</h3>
+    {%- include comment_template.html -%}
+  </div>
+  <div>
     <h3 class="read-more">More from Sticky Weather</h3>
     {%- for post in site.posts limit:5 -%}
     {% if post.url != page.url %}
@@ -84,10 +88,6 @@
     {% endif %}
     {%- endfor -%}
   </div>
-
-  {%- if site.disqus.shortname -%}
-    {%- include disqus_comments.html -%}
-  {%- endif -%}
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
