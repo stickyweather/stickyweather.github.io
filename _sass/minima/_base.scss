@@ -107,6 +107,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight;
   font-family: 'Rokkitt', sans-serif;
   font-weight: 700;
+
+  a {
+    color: $lm-text-color !important;
+    text-decoration: none !important;
+  }
+
 }
 
 
@@ -116,7 +122,7 @@ h1, h2, h3, h4, h5, h6 {
  */
 a {
   color: $link-base-color;
-  text-decoration: none;
+  text-decoration: underline;
 
   &:visited {
     color: $link-visited-color;
@@ -124,7 +130,6 @@ a {
 
   &:hover {
     color: $link-hover-color;
-    text-decoration: underline;
   }
 
   .social-media-list &:hover {

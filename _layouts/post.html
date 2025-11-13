@@ -76,9 +76,10 @@
     {% if post.url != page.url %}
     <ul class="keep-reading">
       <li>
-        <a href="{{ post.url | relative_url }}">
-          <p>{{ post.title | escape }}</p>
-        </a>
+        <div><a href="{{ post.url | relative_url }}"><img src="{{ post.featured_image }}.webp" alt="{{ post.alt }}" width="160" height="90"></a></div>
+        <h4><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h4>
+        <span>{{ post.date | date: date_format }}</span>
+        <p>{{ post.excerpt }}</p>
       </li>
     </ul>
     {% endif %}

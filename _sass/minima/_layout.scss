@@ -240,6 +240,11 @@
   color: $table-text-color;
   font-family: 'Rokkitt', serif;
   font-weight: 400;
+  
+  a {
+    text-decoration: none !important;
+  }
+
 }
 
 .post-link {

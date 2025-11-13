@@ -24,8 +24,40 @@ footer {
 
 .keep-reading {
   list-style: none;
-  display: block;
+  display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto;
+    align-items: auto;
+    grid-template-areas: "continue-reading-post-meta continue-reading-post-featured-image";
   margin-left: 0;
+  border-bottom: solid lightgray 1px;
+
+  h4 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    grid-area: continue-reading-post-meta;
+  }
+
+  a {
+    text-decoration: none !important;
+  }
+
+  span {
+    font-size: 0.8em;
+    margin-top: 0;
+    padding-top: 0;
+    grid-area: continue-reading-post-meta;
+  }
+
+  p {
+    font-size: 0.85em;
+    grid-area: continue-reading-post-meta;
+  }
+
+  div img {
+    grid-area: continue-reading-post-featured-image;
+    aspect-ratio: 1.777778 / 1;
+  }
 }
 
 .final-word::after {
