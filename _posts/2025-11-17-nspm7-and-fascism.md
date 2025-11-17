@@ -12,6 +12,7 @@ description: Looking at how Trump’s NSPM-7 memo weaponizes the concept of “a
 date: November 17, 2025
 author: Forrest Brown
 robots: index, follow
+comments: true
 ---
 
 *This is part two in my series on NSPM-7. You can read part one here: “[NSPM-7 and Capitalism (and What It Means to be an Anti-Capitalist)](https://stickyweather.com/2025/11/09/nspm7-and-capitalism.html)”*

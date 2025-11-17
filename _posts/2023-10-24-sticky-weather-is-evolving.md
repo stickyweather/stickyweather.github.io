@@ -10,6 +10,7 @@ description: I'm changing my approach to make the newsletter more engaging, info
 date: October 10, 2023
 author: Forrest Brown
 robots: index, follow
+comments: true
 ---
 
 Hello friends,

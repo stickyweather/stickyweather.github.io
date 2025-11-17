@@ -12,6 +12,7 @@ description: I am working to unlearn the harmful habits our specialist culture i
 date: December 31, 2024
 author: Forrest Brown
 robots: index, follow
+comments: true
 ---
 
 > The specialist puts himself in charge of one possibility. By leaving out all other possibilities, he enfranchises his little fiction of total control. Leaving out all the “non-functional” or otherwise undesirable possibilities, he makes a rigid, exclusive boundary within which absolute control becomes, if not possible, at least conceivable.

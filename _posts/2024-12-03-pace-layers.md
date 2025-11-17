@@ -11,6 +11,7 @@ description: Learn more about the inclusion of my essay in the inaugural issue o
 date: December 3, 2024
 author: Forrest Brown
 robots: index, follow
+comments: true
 ---
 
 Last October, I was delighted to have an essay I wrote published in the Ideas section of The Long Now Foundation’s website. I had recently finished reading _The Ministry for the Future_ by Kim Stanley Robinson, and my head was swimming with ideas that I would normally share through my podcast, Stories for Earth.

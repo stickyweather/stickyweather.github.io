@@ -11,6 +11,7 @@ description: Passive houses are built to a very high design standard that makes 
 date: September 5, 2024
 author: Forrest Brown
 robots: index, follow
+comments: true
 ---
 
 I know this may come as a shock, but I have an ax to grind.

@@ -11,6 +11,7 @@ description: Let's be honest—it's easy to feel despair when talking about clim
 date: October 27, 2024
 author: Forrest Brown
 robots: index, follow
+comments: true
 ---
 
 <div style="padding: 0 15% 2% 15%; border-bottom: solid dimgray 1px; margin-bottom: 5%;">

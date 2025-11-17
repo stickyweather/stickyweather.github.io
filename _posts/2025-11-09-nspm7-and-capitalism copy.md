@@ -12,6 +12,7 @@ description: A look at capitalism, NSPM-7, and what it means to be anti-capitali
 date: November 9, 2025
 author: Forrest Brown
 robots: index, follow
+comments: true
 ---
 
 I want to confront three big topics I’ve been hesitant to talk about except among friends: capitalism, fascism, and imperialism. Small, lighthearted topics, but ones my conscience compels me to speak up about.

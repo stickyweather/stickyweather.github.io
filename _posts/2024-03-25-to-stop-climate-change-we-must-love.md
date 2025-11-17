@@ -11,6 +11,7 @@ description: When struggling with feelings of loss and disorientation at our cha
 date: March 25, 2024
 author: Forrest Brown
 robots: index, follow
+comments: true
 ---
 
 Easter is this coming weekend. Growing up, Easter stands out in my memory not just for the egg hunts and pastel colors but also for the weather.

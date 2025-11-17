@@ -10,6 +10,7 @@ description: MARTA surveyors in Atlanta began walking the Eastside BeltLine this
 date: November 3, 2023
 author: Forrest Brown
 robots: index, follow
+comments: true
 ---
 Ah, Atlanta. The city where I was born, and the city where I now live.
 
