@@ -12,8 +12,8 @@ date: November 22, 2024
 author: Forrest Brown
 robots: index, follow
 comments: true
-# [choose from one of the following case sensitive categories: Climate, Sustainability, The South, Ideas, Politics, Urbanism, Misc]
-category: Politics
+# [choose from one of the following categories: Climate, Sustainability, The South, Ideas, Politics, Urbanism, Misc]
+category: politics
 ---
 Hey everyone,
 

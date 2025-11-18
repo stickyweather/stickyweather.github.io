@@ -13,8 +13,8 @@ date: December 31, 2024
 author: Forrest Brown
 robots: index, follow
 comments: true
-# [choose from one of the following case sensitive categories: Climate, Sustainability, The South, Ideas, Politics, Urbanism, Misc]
-category: Ideas
+# [choose from one of the following categories: Climate, Sustainability, The South, Ideas, Politics, Urbanism, Misc]
+category: ideas
 ---
 
 > The specialist puts himself in charge of one possibility. By leaving out all other possibilities, he enfranchises his little fiction of total control. Leaving out all the “non-functional” or otherwise undesirable possibilities, he makes a rigid, exclusive boundary within which absolute control becomes, if not possible, at least conceivable.
