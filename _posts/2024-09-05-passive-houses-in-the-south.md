@@ -12,8 +12,8 @@ date: September 5, 2024
 author: Forrest Brown
 robots: index, follow
 comments: true
-# [choose from one of the following categories: climate, sustainability, the south, ideas, politics, urbanism, misc]
-category: sustainability
+# [choose from one of the following case sensitive categories: Climate, Sustainability, The South, Ideas, Politics, Urbanism, Misc]
+category: Sustainability
 ---
 
 I know this may come as a shock, but I have an ax to grind.

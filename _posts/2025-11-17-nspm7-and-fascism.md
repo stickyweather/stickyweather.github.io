@@ -13,8 +13,8 @@ date: November 17, 2025
 author: Forrest Brown
 robots: index, follow
 comments: true
-# [choose from one of the following categories: climate, sustainability, the south, ideas, politics, urbanism, misc]
-category: politics
+# [choose from one of the following case sensitive categories: Climate, Sustainability, The South, Ideas, Politics, Urbanism, Misc]
+category: Politics
 ---
 
 *This is part two in my series on NSPM-7. You can read part one here: “[NSPM-7 and Capitalism (and What It Means to be an Anti-Capitalist)](https://stickyweather.com/2025/11/09/nspm7-and-capitalism.html)”*

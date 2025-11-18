@@ -33,7 +33,14 @@ collections:
 # If you want to link only specific pages in your header, use this and add the path to the pages
 # in order as they should show up.
 header_pages:
-  - about.md
+ # - category/climate.md
+  - category/ideas.md
+  - category/politics.md
+  - category/sustainability.md
+ # - category/the south.md
+  - category/urbanism.md
+  - category/misc.md
+
 
 # Set to `true` to show excerpts on the homepage.
 show_excerpts: true

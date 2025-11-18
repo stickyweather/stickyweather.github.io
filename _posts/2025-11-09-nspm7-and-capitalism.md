@@ -13,8 +13,8 @@ date: November 9, 2025
 author: Forrest Brown
 robots: index, follow
 comments: true
-# [choose from one of the following: climate, sustainability, the south, ideas, politics, urbanism, misc]
-category: politics
+# [choose from one of the following case sensitive categories: Climate, Sustainability, The South, Ideas, Politics, Urbanism, Misc]
+category: Politics
 ---
 
 I want to confront three big topics I’ve been hesitant to talk about except among friends: capitalism, fascism, and imperialism. Small, lighthearted topics, but ones my conscience compels me to speak up about.

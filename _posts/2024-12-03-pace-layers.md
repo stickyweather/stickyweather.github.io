@@ -12,8 +12,8 @@ date: December 3, 2024
 author: Forrest Brown
 robots: index, follow
 comments: true
-# [choose from one of the following: climate, sustainability, the south, ideas, politics, urbanism, misc]
-category: ideas
+# [choose from one of the following case sensitive categories: Climate, Sustainability, The South, Ideas, Politics, Urbanism, Misc]
+category: Ideas
 ---
 
 Last October, I was delighted to have an essay I wrote published in the Ideas section of The Long Now Foundation’s website. I had recently finished reading _The Ministry for the Future_ by Kim Stanley Robinson, and my head was swimming with ideas that I would normally share through my podcast, Stories for Earth.
