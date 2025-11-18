@@ -12,8 +12,8 @@ date: March 25, 2024
 author: Forrest Brown
 robots: index, follow
 comments: true
-# [choose from one of the following case sensitive categories: Climate, Sustainability, The South, Ideas, Politics, Urbanism, Misc]
-category: Ideas
+# [choose from one of the following categories: Climate, Sustainability, The South, Ideas, Politics, Urbanism, Misc]
+category: ideas
 ---
 
 Easter is this coming weekend. Growing up, Easter stands out in my memory not just for the egg hunts and pastel colors but also for the weather.
