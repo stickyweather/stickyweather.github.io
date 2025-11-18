@@ -11,6 +11,8 @@ date: November 3, 2023
 author: Forrest Brown
 robots: index, follow
 comments: true
+# [choose from one of the following categories: climate, sustainability, the south, ideas, politics, urbanism, misc]
+category: urbanism
 ---
 Ah, Atlanta. The city where I was born, and the city where I now live.
 

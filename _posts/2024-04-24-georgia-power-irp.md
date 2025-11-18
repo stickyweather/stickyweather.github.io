@@ -12,6 +12,8 @@ date: April 24, 2024
 author: Forrest Brown
 robots: index, follow
 comments: true
+# [choose from one of the following categories: climate, sustainability, the south, ideas, politics, urbanism, misc]
+category: politics
 ---
 
 Last week, state regulators from the Georgia Public Service Commission (GPSC) [voted to approve Georgia Power's plans](https://www.wabe.org/commission-approves-georgia-power-deal-to-expand-power-plant-buy-electricity/){:target="_blank"} to expand a fossil fuel power plant and to buy dirty energy from other regional utility companies.

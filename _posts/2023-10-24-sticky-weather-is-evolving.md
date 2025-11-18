@@ -11,6 +11,8 @@ date: October 10, 2023
 author: Forrest Brown
 robots: index, follow
 comments: true
+# [choose from one of the following categories: climate, sustainability, the south, ideas, politics, urbanism, misc]
+category: misc
 ---
 
 Hello friends,

@@ -13,6 +13,8 @@ date: November 17, 2025
 author: Forrest Brown
 robots: index, follow
 comments: true
+# [choose from one of the following categories: climate, sustainability, the south, ideas, politics, urbanism, misc]
+category: politics
 ---
 
 *This is part two in my series on NSPM-7. You can read part one here: “[NSPM-7 and Capitalism (and What It Means to be an Anti-Capitalist)](https://stickyweather.com/2025/11/09/nspm7-and-capitalism.html)”*
@@ -30,6 +32,7 @@ NSPM-7 (as I covered in my [first post in this series](https://stickyweather.com
 NSPM-7 creates a dangerous pretext, as it’s nothing more than a way to justify suppressing political dissent amid an ongoing propaganda campaign from the Trump administration and the Republican Party to manufacture consent for forcibly and violently silencing peaceful protestors. It lays the foundation for a slew of Trumpian thoughtcrimes that would seek to label anyone who holds viewpoints deemed divergent from so-called “traditional” American views on a wide range of issues as a domestic terrorist, or at least someone who’s likely to become one.
 
 This isn’t a new tactic, but that doesn’t make it any less alarming. It’s important to understand what’s at stake right now, and hopefully getting a better grasp of what fascism actually is will help you with that.
+{%- include inline-subscribe.html -%}
 ## What’s in a fascist
 The word “fascist” gets thrown around a lot these days, mostly from the left but also from the right, who are always quick to employ a favorite rhetorical move of theirs: shout, “No I’m not, you are!” when faced with any degree of clear-eyed criticism. But what is a fascist, anyway? Is it a word that can be used to describe any kind of tyrant, or is it just a satisfying word to yell at meanies so we can give ourselves a self-righteous pat on the back?
 
