@@ -258,7 +258,12 @@
 /**
  * Posts
  */
-.post-header {
+ .post {
+  padding: $spacing-unit * .5;
+  background-color: #fdfcfa;
+ }
+
+ .post-header {
   margin-bottom: $spacing-unit;
 }
 
