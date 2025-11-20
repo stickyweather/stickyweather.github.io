@@ -1,6 +1,8 @@
 ---
 layout: post
 title: NSPM-7 and Fascism (and What It Means to be an Anti-Fascist)
+redirect_from:
+  - /2025/11/17/nspm7-and-fascism.html/
 audio: 
 featured_image: /assets/media/Charlie-Chaplin-the-Great-Dictator
 alt: Charlie Chaplin in 'The Great Dictator.'

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: NSPM-7 and Capitalism (and What It Means to be an Anti-Capitalist)
+redirect_from:
+  - /2025/11/09/nspm7-and-capitalism.html/
 audio: 
 featured_image: /assets/media/Ben-Sargent-Cartoon
 alt: Political/Editorial Cartoon by Ben Sargent, Austin American-Statesman on Capitalism Defeats Democracy.

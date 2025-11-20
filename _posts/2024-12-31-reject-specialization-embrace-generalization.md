@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Reject Specialization, Embrace Generalization
+redirect_from:
+  - /2024/12/31/reject-specialization-embrace-generalization.html/
 audio: 
 featured_image: /assets/media/SC269804
 alt: Painting by Jean-François Millet of a European peasant sowing millet seeds.

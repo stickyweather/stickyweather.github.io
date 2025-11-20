@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Atlanta is planning to build more light rail — that's a good thing
+redirect_from:
+  - /2023/11/03/light-transit-atlanta.html/
 featured_image: /assets/media/azeem-ahmad-zaheer-3emNOyhy7ak-unsplash(1)
 image_credit: >
 photographer: Azeem Ahmad Zaheer

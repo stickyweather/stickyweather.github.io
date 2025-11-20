@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Sticky Weather is Evolving
+redirect_from:
+  - /2023/10/10/sticky-weather-is-evolving.html/
 featured_image: /assets/media/Sticky-Weather-is-Evolving
 image_credit: >
 photographer: Kelly Sikkema
