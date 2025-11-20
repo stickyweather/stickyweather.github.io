@@ -1,0 +1,14 @@
+RewriteEngine On
+
+# Redirect old URLs to new category-based URLs
+Redirect 301 /2023/10/10/sticky-weather-is-evolving.html/ /misc/2023/10/10/sticky-weather-is-evolving.html/
+Redirect 301 /2023/11/03/light-transit-atlanta.html/ /urbanism/2023/11/03/light-transit-atlanta.html/
+Redirect 301 /2024/03/25/to-stop-climate-change-we-must-love.html/ /ideas/2024/03/25/to-stop-climate-change-we-must-love.html/
+Redirect 301 /2024/04/24/georgia-power-irp.html/ /politics/2024/04/24/georgia-power-irp.html/
+Redirect 301 /2024/09/05/passive-houses-in-the-south.html/ /sustainability/2024/09/05/passive-houses-in-the-south.html/
+Redirect 301 /2024/10/27/notes-on-despair.html/ /ideas/2024/10/27/notes-on-despair.html/
+Redirect 301 /2024/11/22/the-horrors-persist.html/ /politics/2024/11/22/the-horrors-persist.html/
+Redirect 301 /2024/12/03/pace-layers.html/ /ideas/2024/12/03/pace-layers.html/
+Redirect 301 /2024/12/31/reject-specialization-embrace-generalization.html/ /ideas/2024/12/31/reject-specialization-embrace-generalization.html/
+Redirect 301 /2025/11/09/nspm7-and-capitalism.html/ /politics/2025/11/09/nspm7-and-capitalism.html/
+Redirect 301 /2025/11/17/nspm7-and-fascism.html/ /politics/2025/11/17/nspm7-and-fascism.html/
