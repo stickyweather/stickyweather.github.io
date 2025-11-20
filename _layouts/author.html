@@ -10,7 +10,7 @@
     {%- include header.html -%}
 
     <main class="page-content" aria-label="Content">
-      <div class="wrapper">
+      <div class="wrapper author-page">
         {%- assign author = site.authors | where: "name", "Forrest Brown" | first -%}
         <figure>
           {%- if author.gravatarimage -%}

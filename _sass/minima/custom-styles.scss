@@ -146,6 +146,11 @@ footer {
 }
 
 // Begin author page styling
+.author-page {
+  padding: $spacing-unit * .5;
+  background-color: #fdfcfa;
+}
+
 .author-title-wrapper {
   display: grid;
     grid-template-columns: 3fr 1fr;
