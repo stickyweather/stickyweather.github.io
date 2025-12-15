@@ -67,9 +67,9 @@
   <div class="post-content e-content" itemprop="articleBody">
     {%- if page.audio -%}
       {%- for audio in page.audio -%}
-    <div>
+    <div class="audio-player">
       <div><em>Listen to this article:</em></div>
-      <audio style="padding-bottom: 0.5em;" loading="lazy" controls>
+      <audio style="padding-bottom: 0.5em;" loading="lazy" controls controlslist="nodownload nofullscreen">
         <source src="{{ audio }}" type="audio/mpeg">
       </audio>
     </div>
