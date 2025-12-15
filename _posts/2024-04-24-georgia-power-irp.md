@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Georgia Power Doesn’t Get the Final Say For Our Future
+redirect_from:
+  - /2024/04/24/georgia-power-irp.html/
 featured_image: /assets/media/Georgia Power Plant Bowen
 alt: Smoke rises from the smokestacks at Georgia Power's Plant Bowen, a massive coal-fired power plant.
 image_credit: >

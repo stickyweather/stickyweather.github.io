@@ -1,6 +1,8 @@
 ---
 layout: post
 title: My Essay Featured in the Inaugural Issue of ‘Pace Layers’ from The Long Now Foundation
+redirect_from:
+  - /2024/12/03/pace-layers.html/
 featured_image: /assets/media/Pace Layers
 alt: A person holds up a copy of Pace Layers against a green wall.
 image_credit: >

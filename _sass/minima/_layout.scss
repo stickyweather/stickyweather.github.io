@@ -79,6 +79,10 @@
     font-weight: 500;
     font-size: 16px;
 
+    &:hover {
+      text-decoration: underline;
+    }
+
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
       margin-right: 0;
@@ -258,7 +262,12 @@
 /**
  * Posts
  */
-.post-header {
+ .post {
+  padding: $spacing-unit * .5;
+  background-color: #fdfcfa;
+ }
+
+ .post-header {
   margin-bottom: $spacing-unit;
 }
 

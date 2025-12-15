@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Where Are All the Passive Houses?
+redirect_from:
+  - /2024/09/05/passive-houses-in-the-south.html/
 featured_image: /assets/media/Passive-house_scheme_HQ
 alt: A diagram showing how Passive House design works.
 image_credit: >

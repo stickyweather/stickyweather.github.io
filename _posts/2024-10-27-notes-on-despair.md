@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Notes on Despair
+redirect_from:
+  - 2024/10/27/notes-on-despair.html/
 featured_image: /assets/media/alexandre-nishimura-jNMPpSpi7mU-unsplash
 alt: A photograph of still, dark water.
 image_credit: >

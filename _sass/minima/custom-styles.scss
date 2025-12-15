@@ -152,8 +152,8 @@ footer {
   max-width: $blog-content-width !important;
   margin-right: auto;
   margin-left: auto;
-  padding-right: $spacing-unit * .5;
-  padding-left: $spacing-unit * .5;
+  padding: $spacing-unit * .5;
+  background-color: #fdfcfa;
   @extend %clearfix;
 
   @media screen and (min-width: $on-large) {
@@ -169,6 +169,11 @@ footer {
 }
 
 // Begin author page styling
+.author-page {
+  padding: $spacing-unit * .5;
+  background-color: #fdfcfa;
+}
+
 .author-title-wrapper {
   display: grid;
     grid-template-columns: 3fr 1fr;
@@ -237,7 +242,8 @@ footer {
 .recent-posts {
   grid-area: recent-posts;
   margin-right: 1em;
-  padding-right: 1em;
+  padding: $spacing-unit * .5;
+  background-color: #fdfcfa;
 }
 
 .sidebar {
@@ -245,8 +251,10 @@ footer {
 }
 
 .homepage-subscribe {
-  margin-top: 1em;
+  margin-bottom: 1em;
   border-bottom: solid lightgray 1px;
+  padding: $spacing-unit * .5;
+  background-color: #fdfcfa;
 
   #sidebar-subscribe-header {
     font-size: $base-font-size * 1.1;
@@ -271,8 +279,11 @@ footer {
 }
 
 .about-me {
+  padding: $spacing-unit * .5;
+  background-color: #fdfcfa;
   border-bottom: solid lightgray 1px;
   font-size: $base-font-size * 1;
+  margin-bottom: 1em;
 
   h2 {
     font-size: $base-font-size * 1.1;

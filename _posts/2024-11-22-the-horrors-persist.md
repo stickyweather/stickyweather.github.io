@@ -1,6 +1,8 @@
 ---
 layout: post
 title: The Horrors Persist, But So Do [We]
+redirect_from:
+  - /2024/11/22/the-horrors-persist.html/
 featured_image: /assets/media/IMG_2685
 alt: An autumn sunset from a mountaintop overlooking the trees in North Georgia.
 image_credit: >
