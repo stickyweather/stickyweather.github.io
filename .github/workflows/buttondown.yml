@@ -1,0 +1,159 @@
+name: Create Buttondown Draft for New Posts
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - '_posts/**'
+
+jobs:
+  create-buttondown-draft:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 2  # Fetch last 2 commits to compare changes
+      
+      - name: Get changed files
+        id: changed-files
+        run: |
+          # Get list of added markdown files in _posts/
+          CHANGED_FILES=$(git diff --name-only --diff-filter=A HEAD~1 HEAD | grep '^_posts/.*\.md$' || true)
+          echo "files<<EOF" >> $GITHUB_OUTPUT
+          echo "$CHANGED_FILES" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+      
+      - name: Set up Node.js
+        if: steps.changed-files.outputs.files != ''
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      
+      - name: Install dependencies
+        if: steps.changed-files.outputs.files != ''
+        run: |
+          npm install js-yaml marked
+      
+      - name: Create Buttondown drafts
+        if: steps.changed-files.outputs.files != ''
+        env:
+          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
+        run: |
+          cat << 'SCRIPT_EOF' > process-posts.js
+          const fs = require('fs');
+          const yaml = require('js-yaml');
+          const { marked } = require('marked');
+          const https = require('https');
+
+          const files = process.env.CHANGED_FILES.split('\n').filter(f => f.trim());
+
+          if (files.length === 0) {
+            console.log('No new posts found.');
+            process.exit(0);
+          }
+
+          async function createButtondownDraft(post) {
+            const data = JSON.stringify({
+              subject: post.title,
+              body: post.htmlContent,
+              email_type: 'public',
+              status: 'draft',
+              // Optionally include metadata
+              metadata: {
+                post_date: post.date,
+                post_url: post.url
+              }
+            });
+
+            const options = {
+              hostname: 'api.buttondown.email',
+              port: 443,
+              path: '/v1/emails',
+              method: 'POST',
+              headers: {
+                'Authorization': `Token ${process.env.BUTTONDOWN_API_KEY}`,
+                'Content-Type': 'application/json',
+                'Content-Length': data.length
+              }
+            };
+
+            return new Promise((resolve, reject) => {
+              const req = https.request(options, (res) => {
+                let body = '';
+                res.on('data', (chunk) => body += chunk);
+                res.on('end', () => {
+                  if (res.statusCode >= 200 && res.statusCode < 300) {
+                    console.log(`✓ Draft created for: ${post.title}`);
+                    resolve(JSON.parse(body));
+                  } else {
+                    console.error(`✗ Failed to create draft for: ${post.title}`);
+                    console.error(`Status: ${res.statusCode}`);
+                    console.error(`Response: ${body}`);
+                    reject(new Error(`HTTP ${res.statusCode}: ${body}`));
+                  }
+                });
+              });
+
+              req.on('error', reject);
+              req.write(data);
+              req.end();
+            });
+          }
+
+          async function processPost(filePath) {
+            const content = fs.readFileSync(filePath, 'utf8');
+            
+            // Extract front matter
+            const frontMatterRegex = /^---\n([\s\S]*?)\n---\n([\s\S]*)$/;
+            const match = content.match(frontMatterRegex);
+            
+            if (!match) {
+              console.log(`Skipping ${filePath}: No front matter found`);
+              return null;
+            }
+
+            const frontMatter = yaml.load(match[1]);
+            const markdownContent = match[2];
+
+            // Convert markdown to HTML
+            const htmlContent = marked(markdownContent);
+
+            // Extract filename for URL (assuming standard Jekyll naming)
+            const filename = filePath.split('/').pop();
+            const urlMatch = filename.match(/(\d{4})-(\d{2})-(\d{2})-(.*?)\.md/);
+            let postUrl = '';
+            if (urlMatch) {
+              const [, year, month, day, slug] = urlMatch;
+              postUrl = `https://stickyweather.com/${year}/${month}/${day}/${slug}/`; // UPDATE THIS URL
+            }
+
+            return {
+              title: frontMatter.title || 'Untitled Post',
+              htmlContent: htmlContent,
+              excerpt: frontMatter.excerpt || '',
+              date: frontMatter.date || '',
+              url: postUrl
+            };
+          }
+
+          async function main() {
+            for (const file of files) {
+              try {
+                const post = await processPost(file);
+                if (post) {
+                  await createButtondownDraft(post);
+                }
+              } catch (error) {
+                console.error(`Error processing ${file}:`, error.message);
+              }
+            }
+          }
+
+          main();
+          SCRIPT_EOF
+
+          export CHANGED_FILES="${{ steps.changed-files.outputs.files }}"
+          node process-posts.js
