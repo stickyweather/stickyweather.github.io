@@ -340,3 +340,131 @@ footer {
   }
 
 // End homepage styling
+
+// Begin weather and time styling
+.weather-container {
+    background: black;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    display: flex;
+    font-size: 0.8em;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0.1em 2em 0em 2em;
+    
+    /* Sticky banner properties */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.ticker-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+#location {
+    font-size: 0.9em;
+    &::after {
+      content: '|';
+      padding: 0em 1em;
+    }
+}
+
+.mobile-duplicate {
+    display: none !important;
+}
+
+/* Mobile ticker animation */
+@media (max-width: 768px) {
+    .weather-container {
+        justify-content: flex-start;
+        padding: 0.1em 0;
+        overflow: hidden;
+    }
+    
+    .mobile-duplicate {
+        display: flex !important;
+    }
+    
+    .ticker-content {
+        animation: ticker 25s linear infinite;
+        padding-left: 100%;
+    }
+    
+    @keyframes ticker {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+    
+    .weather-container:hover .ticker-content {
+        animation-play-state: paused;
+    }
+}
+
+/* Add padding to body so content doesn't hide under banner */
+body {
+    padding-top: 2.3em;
+}
+
+.item {
+    margin: 0;
+    font-size: 0.9em;
+    font-family: $base-font-family, sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.weather-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.8em;
+}
+
+.wi {
+    font-size: 0.8em;
+}
+
+.time-item {
+    display: flex;
+    align-items: center;
+    font-size: 0.8em;
+    &::after {
+      content: 'ET';
+      padding-left: 0.5em;
+    }
+}
+
+.time-item a {
+    text-decoration: none;
+    color: white;
+}
+
+.time-item a:hover {
+    text-decoration: underline;
+}
+
+.loading {
+    font-style: italic;
+}
+
+.error {
+    color: #cc0000;
+}
+// End weather and time styling

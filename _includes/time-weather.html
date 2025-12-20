@@ -1,0 +1,164 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-icons.min.css">
+<div class="weather-container">
+    <div class="ticker-content">
+        <!-- Original content -->
+        <div class="item">
+            <span id="location">Current weather conditions in Decatur, GA</span>
+            <span id="temperature" class="loading">Loading...</span>
+        </div>
+        <div class="item weather-item">
+            <i id="weather-icon" class="wi wi-day-sunny"></i>
+            <span id="weather-desc" class="loading">Loading weather...</span>
+        </div>
+        <div class="item time-item" id="current-time">
+            Loading time...
+        </div>
+        
+        <!-- Duplicate content for seamless ticker loop on mobile -->
+        <div class="item mobile-duplicate">
+            <span id="location-dup">Current weather conditions in Decatur, GA</span>
+            <span id="temperature-dup" class="loading">Loading...</span>
+        </div>
+        <div class="item weather-item mobile-duplicate">
+            <i id="weather-icon-dup" class="wi wi-day-sunny"></i>
+            <span id="weather-desc-dup" class="loading">Loading weather...</span>
+        </div>
+        <div class="item time-item mobile-duplicate" id="current-time-dup">
+            Loading time...
+        </div>
+    </div>
+</div>
+
+<script>
+    const DECATUR_LAT = 33.77;
+    const DECATUR_LON = -84.29;
+
+    // Weather icon mapping (OpenWeatherMap condition codes)
+    const weatherIconMap = {
+        '01d': 'wi-day-sunny',
+        '01n': 'wi-night-clear',
+        '02d': 'wi-day-cloudy',
+        '02n': 'wi-night-alt-cloudy',
+        '03d': 'wi-cloud',
+        '03n': 'wi-cloud',
+        '04d': 'wi-cloudy',
+        '04n': 'wi-cloudy',
+        '09d': 'wi-showers',
+        '09n': 'wi-showers',
+        '10d': 'wi-day-rain',
+        '10n': 'wi-night-alt-rain',
+        '11d': 'wi-thunderstorm',
+        '11n': 'wi-thunderstorm',
+        '13d': 'wi-snow',
+        '13n': 'wi-snow',
+        '50d': 'wi-fog',
+        '50n': 'wi-fog'
+    };
+
+    async function getWeather() {
+        try {
+            // Using Open-Meteo (free, no API key required)
+            const url = `https://api.open-meteo.com/v1/forecast?latitude=${DECATUR_LAT}&longitude=${DECATUR_LON}&current=temperature_2m,weather_code&temperature_unit=fahrenheit&timezone=America/New_York`;
+            
+            const response = await fetch(url);
+            const data = await response.json();
+            
+            const temp = Math.round(data.current.temperature_2m);
+            const weatherCode = data.current.weather_code;
+            
+            // Map weather codes to descriptions and icons
+            const weatherInfo = getWeatherInfo(weatherCode);
+            
+            // Update original elements
+            document.getElementById('temperature').textContent = `${temp}°F`;
+            document.getElementById('temperature').className = '';
+            
+            document.getElementById('weather-icon').className = `wi ${weatherInfo.icon}`;
+            document.getElementById('weather-desc').textContent = weatherInfo.description;
+            document.getElementById('weather-desc').className = '';
+            
+            // Update duplicate elements for ticker
+            const tempDup = document.getElementById('temperature-dup');
+            const iconDup = document.getElementById('weather-icon-dup');
+            const descDup = document.getElementById('weather-desc-dup');
+            
+            if (tempDup) tempDup.textContent = `${temp}°F`;
+            if (iconDup) iconDup.className = `wi ${weatherInfo.icon}`;
+            if (descDup) descDup.textContent = weatherInfo.description;
+            
+        } catch (error) {
+            console.error('Weather fetch error:', error);
+            document.getElementById('temperature').textContent = 'Weather unavailable';
+            document.getElementById('temperature').className = 'error';
+            document.getElementById('weather-desc').textContent = 'Unable to load weather';
+            document.getElementById('weather-desc').className = 'error';
+            
+            // Update duplicates with error state too
+            const tempDup = document.getElementById('temperature-dup');
+            const descDup = document.getElementById('weather-desc-dup');
+            if (tempDup) tempDup.textContent = 'Weather unavailable';
+            if (descDup) descDup.textContent = 'Unable to load weather';
+        }
+    }
+
+    function getWeatherInfo(code) {
+        // Open-Meteo weather code mapping
+        const weatherMap = {
+            0: { description: 'Clear sky', icon: 'wi-day-sunny' },
+            1: { description: 'Mainly clear', icon: 'wi-day-sunny' },
+            2: { description: 'Partly cloudy', icon: 'wi-day-cloudy' },
+            3: { description: 'Overcast', icon: 'wi-cloudy' },
+            45: { description: 'Foggy', icon: 'wi-fog' },
+            48: { description: 'Foggy', icon: 'wi-fog' },
+            51: { description: 'Light drizzle', icon: 'wi-sprinkle' },
+            53: { description: 'Drizzle', icon: 'wi-sprinkle' },
+            55: { description: 'Heavy drizzle', icon: 'wi-sprinkle' },
+            61: { description: 'Light rain', icon: 'wi-rain' },
+            63: { description: 'Rain', icon: 'wi-rain' },
+            65: { description: 'Heavy rain', icon: 'wi-rain' },
+            71: { description: 'Light snow', icon: 'wi-snow' },
+            73: { description: 'Snow', icon: 'wi-snow' },
+            75: { description: 'Heavy snow', icon: 'wi-snow' },
+            77: { description: 'Snow grains', icon: 'wi-snow' },
+            80: { description: 'Light showers', icon: 'wi-showers' },
+            81: { description: 'Showers', icon: 'wi-showers' },
+            82: { description: 'Heavy showers', icon: 'wi-showers' },
+            85: { description: 'Light snow showers', icon: 'wi-snow' },
+            86: { description: 'Snow showers', icon: 'wi-snow' },
+            95: { description: 'Thunderstorm', icon: 'wi-thunderstorm' },
+            96: { description: 'Thunderstorm with hail', icon: 'wi-thunderstorm' },
+            99: { description: 'Thunderstorm with hail', icon: 'wi-thunderstorm' }
+        };
+        
+        return weatherMap[code] || { description: 'Unknown', icon: 'wi-day-sunny' };
+    }
+
+    function updateTime() {
+        const now = new Date();
+        const options = { 
+            timeZone: 'America/New_York',
+            hour: 'numeric',
+            minute: '2-digit',
+            second: '2-digit',
+            hour12: true
+        };
+        const timeString = now.toLocaleTimeString('en-US', options);
+        
+        // Update original time
+        document.getElementById('current-time').textContent = timeString;
+        
+        // Update duplicate time for ticker
+        const timeDup = document.getElementById('current-time-dup');
+        if (timeDup) timeDup.textContent = timeString;
+    }
+
+    // Initial load
+    getWeather();
+    updateTime();
+
+    // Update time every second
+    setInterval(updateTime, 1000);
+
+    // Update weather every 10 minutes
+    setInterval(getWeather, 600000);
+</script>
