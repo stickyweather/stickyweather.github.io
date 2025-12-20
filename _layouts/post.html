@@ -28,7 +28,7 @@
     {%- if page.category -%}
       {% for category in page.category %}
         <div class="post-meta blog-post-header-category" itemprop="category">
-          <a href="/category/{{ category }}.html"><em>{{ category }}</em></a>
+          <a class="p-category" href="/category/{{ category }}.html"><em>{{ category }}</em></a>
         </div>
       {% endfor %}
     {%- endif -%}
