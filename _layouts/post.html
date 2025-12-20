@@ -10,19 +10,20 @@
     <main class="page-content" aria-label="Content">
       <div class="post-wrapper">
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-
+  {% if site.author %}
   <div class="p-author h-card" style="display:none;">
   <a rel="author" class="u-url u-uid" href="https://stickyweather.com"></a>
   <img
     class="u-photo"
-    src="https://gravatar.com/avatar/c3737b29db27f55cff00c383997f1260?size=256&cache=1732219730681.webp"
-    alt="Forrest Brown"
+    src="{{ site.author.photo }}"
+    alt="{{ site.author.alt }}"
   />
   <span class="p-name">
     <span class="p-given-name">Forrest</span>
     <span class="p-family-name">Brown</span>
   </span>
 </div>
+{% endif %}
   <header class="post-header">
     {%- if page.category -%}
       {% for category in page.category %}
