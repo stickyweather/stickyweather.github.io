@@ -8,7 +8,7 @@
           <a href="{{ site.feed.path | default: 'feed.xml' | absolute_url }}">
             <svg class="svg-icon orange">
               <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
-            </svg><span>RSS feed</span><a href="http://www.blogarama.com/fashion-blogs/1351624-blog/" title="Blogarama.com - Follow me on Blogarama">Blogarama - Blog Directory</a>
+            </svg><span>RSS feed</span>
           </a>
         </p>
       {%- if site.author %}
@@ -47,10 +47,10 @@
         <p><span style="padding-right: 1.5em;"><a href="/about"><strong>About</strong></a></span><a href="/sitemap.xml"><strong>Sitemap</strong></a></p>
       </div>
       <div class="footer-col">
-        <ul class="contact-list">
-          <li style="text-align: center;">Follow Forrest</li>
-          <li>{%- include social.html -%}</li>
-        </ul>
+        <div class="contact-list">
+          <div>Follow Forrest</div>
+          <div>{%- include social.html -%}</div>
+        </div>
       </div>
     </div>
 
