@@ -11,16 +11,22 @@
             </svg><span>RSS feed</span>
           </a>
         </p>
-      {%- if site.author %}
+      {%- if site.author -%}
         <ul class="contact-list">
-          {% if site.author.name -%}
-            <li class="p-name">{{ site.author.name | escape }}</li>
-          {% endif -%}
-          {% if site.author.email -%}
+            {%- if site.author.photo -%}
+            <li><img class="u-photo" src="{{ site.author.photo }}" alt="{{ site.author.alt }}" /></li>
+            {%- endif -%}
+            {%- if site.author.name -%}
+            <li class="p-name">{{ site.author.name }}</li>
+            {%- endif %}
+            {%- if site.author.bio -%}
+            <li><p class="p-note">{{ site.author.bio | escape }}</p></li>
+            {%- endif -%}
+          {%- if site.author.email -%}
             <li><a class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
-          {%- endif %}
+          {%- endif -%}
         </ul>
-      {%- endif %}
+      {%- endif -%}
       </div>
       <div class="footer-col">
         <p>{{ site.description | escape }}</p>

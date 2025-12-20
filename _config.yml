@@ -3,6 +3,9 @@ tagline: A climate blog from Forrest Brown
 author:
   name: Forrest Brown
   email: forrest@stickyweather.com
+  photo: /assets/media/Forrest-Brown-Photo.avif
+  alt: Headshot of Forrest Brown with a cat crawling on his shoulder.
+  bio: Writer • Can't swim/Can't dance/Don't know karate.
 
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.

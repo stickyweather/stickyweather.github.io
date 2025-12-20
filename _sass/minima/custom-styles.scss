@@ -291,6 +291,12 @@ footer {
 
 }
 
+.u-photo {
+  border-radius: 50%;
+  width: 90px;
+  padding-bottom: 1em;
+}
+
 @include media-query($on-palm) {
   .home {
       display: grid;
