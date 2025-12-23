@@ -31,6 +31,16 @@ plugins:
 collections:
   authors:
     output: #
+  notes:
+    output: true
+    permalink: /notes/:year/:month/:day/:title/
+
+defaults:
+  - scope
+      path: ""
+      type: "notes"
+    values:
+      layout: note
 
 # Theme-specific settings
 

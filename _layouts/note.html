@@ -1,0 +1,22 @@
+---
+layout: base
+---
+
+<article class="note h-entry">
+  <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">
+    {{ page.date | date: "%B %d, %Y at %I:%M %p" }}
+  </time>
+  
+  <div class="e-content">
+    {{ content }}
+  </div>
+  
+  {% if page.syndication %}
+  <div class="syndication">
+    Syndicated to:
+    {% for link in page.syndication %}
+      <a href="{{ link }}" class="u-syndication">{{ link }}</a>
+    {% endfor %}
+  </div>
+  {% endif %}
+</article>
