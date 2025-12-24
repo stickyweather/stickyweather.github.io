@@ -31,12 +31,14 @@ plugins:
 collections:
   authors:
     output: #
+
+collections:
   notes:
     output: true
     permalink: /notes/:year/:month/:day/:title/
 
 defaults:
-  - scope
+  - scope:
       path: ""
       type: "notes"
     values:
