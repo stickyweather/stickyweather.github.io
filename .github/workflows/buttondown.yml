@@ -116,6 +116,13 @@ jobs:
             }
 
             const frontMatter = yaml.load(match[1]);
+            
+            // Skip posts with category: social (Micropub notes)
+            if (frontMatter.category === 'social') {
+              console.log(`Skipping ${filePath}: Post has category 'social' (Micropub note)`);
+              return null;
+            }
+            
             const markdownContent = match[2];
 
             // Convert markdown to HTML
