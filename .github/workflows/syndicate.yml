@@ -5,7 +5,7 @@ on:
     branches:
       - master
     paths:
-      - '_posts/social/**'
+      - '_posts/**'  # Match all posts in _posts/
 
 jobs:
   syndicate:
@@ -15,10 +15,10 @@ jobs:
         with:
           fetch-depth: 2
       
-      - name: Get new social posts
+      - name: Get new posts
         id: new_posts
         run: |
-          NEW_FILES=$(git diff --name-only --diff-filter=A HEAD~1 HEAD | grep '^_posts/social/.*\.md$' || true)
+          NEW_FILES=$(git diff --name-only --diff-filter=A HEAD~1 HEAD | grep '^_posts/.*\.md$' || true)
           echo "files<<EOF" >> $GITHUB_OUTPUT
           echo "$NEW_FILES" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
@@ -73,7 +73,10 @@ jobs:
               }, (res) => {
                 let body = '';
                 res.on('data', chunk => body += chunk);
-                res.on('end', () => resolve(JSON.parse(body).url));
+                res.on('end', () => {
+                  const response = JSON.parse(body);
+                  resolve(response.url);
+                });
               });
               req.on('error', reject);
               req.write(data);
@@ -124,7 +127,8 @@ jobs:
                 res.on('data', chunk => body += chunk);
                 res.on('end', () => {
                   const response = JSON.parse(body);
-                  resolve('https://bsky.app/profile/' + handle + '/post/' + response.uri.split('/').pop());
+                  const bskyUrl = 'https://bsky.app/profile/' + handle + '/post/' + response.uri.split('/').pop();
+                  resolve(bskyUrl);
                 });
               });
               req.on('error', reject);
@@ -137,15 +141,12 @@ jobs:
             const files = process.argv[2].split('\n').filter(f => f);
             for (const file of files) {
               console.log('Processing ' + file + '...');
-              if (!file.includes('_posts/social/')) {
-                console.log('Skipping ' + file + ' (not a social post)');
-                continue;
-              }
               const post = parsePost(file);
               if (!post) {
                 console.log('Could not parse ' + file);
                 continue;
               }
+              // Only syndicate if category is 'social'
               if (post.frontmatter.category !== 'social') {
                 console.log('Skipping ' + file + ' (category is not social)');
                 continue;
