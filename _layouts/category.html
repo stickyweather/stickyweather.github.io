@@ -1,7 +1,6 @@
 ---
 layout: base
 ---
-
 <div class="home">
 <div class="recent-posts">
      {%- if page.title -%}
@@ -12,22 +11,57 @@ layout: base
       {{ page.description }}
     </div>
     {%- endif -%}
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      {%- assign post_category = post.category -%}
-      {%- if post_category == page.category -%}
-      <li>
-        <span><a href="{{ post.url | relative_url }}"><img src="{{ post.featured_image }}.webp" alt="{{ post.alt }}" width="300" height="168"></a></span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <p>{{ post.excerpt }}</p>
-      </li>
-      {%- endif -%}
-      {%- endfor -%}
-    </ul>
+    
+    {%- if page.category == 'social' -%}
+      <!-- Social posts timeline (Twitter/Bluesky style) -->
+      <div class="social-timeline">
+        {%- for post in site.posts -%}
+        {%- if post.category == 'social' -%}
+        <article class="social-post h-entry">
+          <div class="social-post-header">
+            <div class="social-post-author-info">
+              {%- if site.author.photo -%}
+              <img class="social-post-avatar u-photo" src="{{ site.author.photo }}" alt="{{ site.author.alt }}" />
+              {%- endif -%}
+              <span class="social-post-author p-name">{{ site.author.name | default: "You" }}</span>
+            </div>
+            <span class="social-post-date">
+              <a href="{{ post.url | relative_url }}" class="u-url">
+                <time class="dt-published" datetime="{{ post.date | date_to_xmlschema }}">
+                  {{ post.date | date: "%b %-d, %Y at %-I:%M %p" }}
+                </time>
+              </a>
+            </span>
+          </div>
+          <div class="social-post-content e-content">
+            {{ post.content }}
+          </div>
+          <div class="social-post-footer">
+            <a href="{{ post.url | relative_url }}" class="social-post-link">View details →</a>
+          </div>
+        </article>
+        {%- endif -%}
+        {%- endfor -%}
+      </div>
+    {%- else -%}
+      <!-- Regular blog posts (original layout) -->
+      <ul class="post-list">
+        {%- for post in site.posts -%}
+        {%- assign post_category = post.category -%}
+        {%- if post_category == page.category -%}
+        <li>
+          <span><a href="{{ post.url | relative_url }}"><img src="{{ post.featured_image }}.webp" alt="{{ post.alt }}" width="300" height="168"></a></span>
+          <h3>
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              {{ post.title | escape }}
+            </a>
+          </h3>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <p>{{ post.excerpt }}</p>
+        </li>
+        {%- endif -%}
+        {%- endfor -%}
+      </ul>
+    {%- endif -%}
 </div>
 </div>

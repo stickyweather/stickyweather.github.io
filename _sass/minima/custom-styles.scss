@@ -468,3 +468,98 @@ body {
     color: #cc0000;
 }
 // End weather and time styling
+
+// Begin custom social timeline styling
+
+.social-timeline {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.social-post {
+  border: 1px solid #e1e8ed;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 12px;
+  background: white;
+  transition: box-shadow 0.2s;
+}
+
+.social-post:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.social-post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+  gap: 8px;
+}
+
+.social-post-author-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.social-post-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.social-post-author {
+  font-weight: 600;
+  font-size: 15px;
+  color: #0f1419;
+}
+
+.social-post-date {
+  font-size: 14px;
+  color: #536471;
+}
+
+.social-post-date a {
+  color: #536471;
+  text-decoration: none;
+}
+
+.social-post-date a:hover {
+  text-decoration: underline;
+}
+
+.social-post-content {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #0f1419;
+  margin-bottom: 12px;
+  word-wrap: break-word;
+}
+
+.social-post-content p {
+  margin: 0 0 12px 0;
+}
+
+.social-post-content p:last-child {
+  margin-bottom: 0;
+}
+
+.social-post-footer {
+  padding-top: 8px;
+  border-top: 1px solid #eff3f4;
+}
+
+.social-post-link {
+  color: #1d9bf0;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.social-post-link:hover {
+  text-decoration: underline;
+}
+
+// End custom social timeline styling
