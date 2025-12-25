@@ -22,8 +22,6 @@ function parsePost(filepath) {
   };
 }
 
-
-
 // Post to Mastodon
 async function postToMastodon(text, postUrl) {
   const instance = process.env.MASTODON_INSTANCE;
@@ -126,8 +124,6 @@ async function postToBluesky(text, postUrl) {
   });
 }
 
-
-
 // Main function
 async function main() {
   const files = process.argv[2].split('\n').filter(f => f);
@@ -135,9 +131,21 @@ async function main() {
   for (const file of files) {
     console.log(`Processing ${file}...`);
     
+    // Skip if not in social directory
+    if (!file.includes('_posts/social/')) {
+      console.log(`Skipping ${file} (not a social post)`);
+      continue;
+    }
+    
     const post = parsePost(file);
     if (!post) {
       console.log(`Could not parse ${file}`);
+      continue;
+    }
+    
+    // Verify it has collection: social in frontmatter
+    if (post.frontmatter.collection !== 'social') {
+      console.log(`Skipping ${file} (collection is not 'social')`);
       continue;
     }
     

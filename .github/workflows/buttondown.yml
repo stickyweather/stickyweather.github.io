@@ -6,6 +6,7 @@ on:
       - master
     paths:
       - '_posts/**'
+      - '!_posts/social/**'  # Exclude social posts
 
 jobs:
   create-buttondown-draft:
@@ -15,13 +16,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          fetch-depth: 2  # Fetch last 2 commits to compare changes
+          fetch-depth: 2
       
       - name: Get changed files
         id: changed-files
         run: |
-          # Get list of added markdown files in _posts/
-          CHANGED_FILES=$(git diff --name-only --diff-filter=A HEAD~1 HEAD | grep '^_posts/.*\.md$' || true)
+          # Get list of added markdown files in _posts/, excluding social directory
+          CHANGED_FILES=$(git diff --name-only --diff-filter=A HEAD~1 HEAD | grep '^_posts/.*\.md$' | grep -v '^_posts/social/' || true)
           echo "files<<EOF" >> $GITHUB_OUTPUT
           echo "$CHANGED_FILES" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
