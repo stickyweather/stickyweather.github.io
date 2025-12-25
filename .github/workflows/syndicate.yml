@@ -153,7 +153,7 @@ jobs:
               }
               const slug = file.match(/\d{4}-\d{2}-\d{2}-(.*?)\.md$/)[1];
               const date = file.match(/(\d{4})-(\d{2})-(\d{2})/);
-              const postUrl = process.env.SITE_URL + '/social/' + date[1] + '/' + date[2] + '/' + date[3] + '/' + slug + '/';
+              const postUrl = process.env.SITE_URL + '/social/' + date[1] + '/' + date[2] + '/' + date[3] + '/' + slug;
               try {
                 const mastodonUrl = await postToMastodon(post.content, postUrl);
                 console.log('✓ Posted to Mastodon: ' + mastodonUrl);
