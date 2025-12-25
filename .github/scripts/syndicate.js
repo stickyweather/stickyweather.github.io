@@ -143,9 +143,9 @@ async function main() {
       continue;
     }
     
-    // Verify it has collection: social in frontmatter
-    if (post.frontmatter.collection !== 'social') {
-      console.log(`Skipping ${file} (collection is not 'social')`);
+    // Verify it has category: social in frontmatter
+    if (post.frontmatter.category !== 'social') {
+      console.log(`Skipping ${file} (category is not 'social')`);
       continue;
     }
     
