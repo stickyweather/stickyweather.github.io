@@ -1,0 +1,44 @@
+---
+layout: base
+---
+<div class="home">
+  <div class="recent-posts">
+    {%- if page.title -%}
+      <h1 class="post-list-heading">{{ page.title }}</h1>
+    {%- endif -%}
+    {%- if page.description -%}
+      <div style="border-bottom: solid lightgray 1px; margin-bottom: 1em; padding-bottom: 1em; font-size: 0.825em;">
+        {{ page.description }}
+      </div>
+    {%- endif -%}
+    
+    <!-- Notes timeline (Twitter/Bluesky style) -->
+    <div class="social-timeline">
+      {%- for note in site.notes reversed -%}
+        <article class="social-post h-entry">
+          <div class="social-post-header">
+            <div class="social-post-author-info">
+              {%- if site.author.photo -%}
+                <img class="social-post-avatar u-photo" src="{{ site.author.photo }}" alt="{{ site.author.alt }}" />
+              {%- endif -%}
+              <span class="social-post-author p-name">{{ site.author.name | default: "You" }}</span>
+            </div>
+            <span class="social-post-date">
+              <a href="{{ note.url | relative_url }}" class="u-url">
+                <time class="dt-published" datetime="{{ note.date | date_to_xmlschema }}">
+                  {{ note.date | date: "%b %-d, %Y at %-I:%M %p" }}
+                </time>
+              </a>
+            </span>
+          </div>
+          <div class="social-post-content e-content">
+            {{ note.content }}
+          </div>
+          <div class="social-post-footer">
+            <a href="{{ note.url | relative_url }}" class="social-post-link">View details →</a>
+          </div>
+        </article>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
