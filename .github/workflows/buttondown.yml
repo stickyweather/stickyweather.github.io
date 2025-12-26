@@ -6,7 +6,6 @@ on:
       - master
     paths:
       - '_posts/**'
-      - '!_posts/social/**'  # Exclude social posts
 
 jobs:
   create-buttondown-draft:
@@ -21,10 +20,10 @@ jobs:
       - name: Get changed files
         id: changed-files
         run: |
-          # Get list of added markdown files in _posts/, excluding social directory
-          CHANGED_FILES=$(git diff --name-only --diff-filter=A HEAD~1 HEAD | grep '^_posts/.*\.md$' | grep -v '^_posts/social/' || true)
+          # Get list of added markdown files in _posts/ only (not _notes)
+          CHANGED_FILES=$(git diff --name-only --diff-filter=A HEAD~1 HEAD | grep '^_posts/.*\.md$' || true)
           echo "files<<EOF" >> $GITHUB_OUTPUT
-          echo "$CHANGED_FILES" >> $GITHUB_OUTPUT
+          echo "$NEW_FILES" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
       
       - name: Set up Node.js
