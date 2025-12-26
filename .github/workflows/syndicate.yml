@@ -5,7 +5,7 @@ on:
     branches:
       - master
     paths:
-      - '_posts/**'  # Match all posts in _posts/
+      - '_notes/**'  # Match all posts in _posts/
 
 jobs:
   syndicate:
@@ -146,14 +146,14 @@ jobs:
                 console.log('Could not parse ' + file);
                 continue;
               }
-              // Only syndicate if category is 'social'
-              if (post.frontmatter.category !== 'social') {
-                console.log('Skipping ' + file + ' (category is not social)');
+              // Only syndicate if category is 'notes'
+              if (post.frontmatter.category !== 'notes') {
+                console.log('Skipping ' + file + ' (category is not notes)');
                 continue;
               }
               const slug = file.match(/\d{4}-\d{2}-\d{2}-(.*?)\.md$/)[1];
               const date = file.match(/(\d{4})-(\d{2})-(\d{2})/);
-              const postUrl = process.env.SITE_URL + '/social/' + date[1] + '/' + date[2] + '/' + date[3] + '/' + slug;
+              const postUrl = process.env.SITE_URL + '/notes/' + date[1] + '/' + date[2] + '/' + date[3] + '/' + slug;
               try {
                 const mastodonUrl = await postToMastodon(post.content, postUrl);
                 console.log('✓ Posted to Mastodon: ' + mastodonUrl);
