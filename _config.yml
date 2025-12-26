@@ -44,7 +44,7 @@ header_pages:
  # - category/the south.md
   - category/urbanism.md
   - category/misc.md
-  - category/social.md
+  - category/notes.md
 
 
 # Set to `true` to show excerpts on the homepage.
