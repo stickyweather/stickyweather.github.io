@@ -5,7 +5,7 @@ on:
     branches:
       - master
     paths:
-      - '_notes/**'  # Match all posts in _posts/
+      - '_notes/**'  # Watch for new notes
 
 jobs:
   syndicate:
@@ -15,22 +15,22 @@ jobs:
         with:
           fetch-depth: 2
       
-      - name: Get new posts
-        id: new_posts
+      - name: Get new notes
+        id: new_notes
         run: |
-          NEW_FILES=$(git diff --name-only --diff-filter=A HEAD~1 HEAD | grep '^_posts/.*\.md$' || true)
+          NEW_FILES=$(git diff --name-only --diff-filter=A HEAD~1 HEAD | grep '^_notes/.*\.md$' || true)
           echo "files<<EOF" >> $GITHUB_OUTPUT
           echo "$NEW_FILES" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
       
       - name: Setup Node.js
-        if: steps.new_posts.outputs.files != ''
+        if: steps.new_notes.outputs.files != ''
         uses: actions/setup-node@v3
         with:
           node-version: '18'
       
       - name: Syndicate posts
-        if: steps.new_posts.outputs.files != ''
+        if: steps.new_notes.outputs.files != ''
         env:
           MASTODON_ACCESS_TOKEN: ${{ secrets.MASTODON_ACCESS_TOKEN }}
           MASTODON_INSTANCE: ${{ secrets.MASTODON_INSTANCE }}
@@ -167,4 +167,4 @@ jobs:
           main();
           SCRIPT_EOF
           
-          node syndicate.js "${{ steps.new_posts.outputs.files }}"
+          node syndicate.js "${{ steps.new_notes.outputs.files }}"
