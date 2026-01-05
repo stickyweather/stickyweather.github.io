@@ -33,7 +33,7 @@ collections:
     output: true
   notes:
     output: true
-    permalink: /notes/:year/:month/:day/:slug/
+    permalink: /notes/:path/
 
 # Theme-specific settings
 
