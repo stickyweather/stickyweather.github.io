@@ -1,0 +1,35 @@
+name: Rename unnamed notes
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  rename:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Rename .md files to index.md
+        run: |
+          find _notes -type f -name ".md" | while read -r file; do
+            dir="$(dirname "$file")"
+            if [ ! -f "$dir/index.md" ]; then
+              mv "$file" "$dir/index.md"
+              echo "Renamed: $file -> $dir/index.md"
+            fi
+          done
+      
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add _notes
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Auto-rename unnamed notes to index.md"
+            git push
+          fi
