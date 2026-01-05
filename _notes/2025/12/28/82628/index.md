@@ -1,8 +1,0 @@
----
-layout: notes
-date: '2025-12-28T22:57:08.929Z'
-title: ''
-slug: '82628'
-category: notes
----
-Testing
