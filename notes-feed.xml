@@ -3,7 +3,7 @@ layout: null
 permalink: /notes/feed.xml
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Notes from Sticky Weather</title>
     <link>{{ site.url }}</link>
@@ -18,6 +18,15 @@ permalink: /notes/feed.xml
       <description><![CDATA[
         {{ note.content }}
       ]]></description>
+      {%- if note.mf-photo -%}
+        {%- for mf-photo in note.mf-photo -%}
+          <media:content
+            url="{{ mf-photo }}"
+            isDefault="true"
+            expression="full"
+          />
+        {%- endfor -%}
+      {%- endif -%}
     </item>
     {% endfor %}
   </channel>

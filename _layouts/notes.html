@@ -33,6 +33,11 @@ layout: base
           </div>
           <div class="social-post-content e-content">
             {{ note.content }}
+            {%- if note.mf-photo -%}
+              {%- for mf-photo in note.mf-photo -%}
+                <img src="{{ mf-photo }}" alt="" loading="lazy" class="mf-photo">
+              {%- endfor -%}
+            {%- endif -%}
           </div>
           <div class="social-post-footer">
             <a href="{{ note.url | relative_url }}" class="social-post-link">View details →</a>
