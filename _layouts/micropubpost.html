@@ -8,8 +8,10 @@ layout: page
   
   <div class="e-content">
     {% if page.mf-photo %}
-    {{ content }} 
-    <img src="{{ mf-photo }}" alt="" loading="lazy">
+    {{ content }}
+      {% for mf-photo in page.mf-photo}
+        <img src="{{ mf-photo }}" alt="" loading="lazy">
+      {% endfor %}
     {% endif %}
   </div>
   
