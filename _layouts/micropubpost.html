@@ -8,6 +8,9 @@ layout: page
   
   <div class="e-content">
     {{ content }}
+    {% if page.mf-photo %} 
+    <img src="{{ mf-photo }}" alt="" loading="lazy">
+    {% endif %}
   </div>
   
   {% if page.syndication %}

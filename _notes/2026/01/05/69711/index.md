@@ -1,5 +1,5 @@
 ---
-layout: notes
+layout: micropubpost
 date: '2026-01-05T19:21:51.358Z'
 title: ''
 slug: '69711'
