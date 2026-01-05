@@ -7,12 +7,12 @@ layout: page
   </time>
   
   <div class="e-content">
-    {% if page.mf-photo %}
+    {%- if page.mf-photo -%}
     {{ content }}
-      {% for mf-photo in page.mf-photo}
-        <img src="{{ mf-photo }}" alt="" loading="lazy">
-      {% endfor %}
-    {% endif %}
+      {%- for mf-photo in page.mf-photo -%}
+        <img src="{{ mf-photo }}" alt="" loading="lazy" class="mf-photo">
+      {%- endfor -%}
+    {%- endif -%}
   </div>
   
   {% if page.syndication %}
