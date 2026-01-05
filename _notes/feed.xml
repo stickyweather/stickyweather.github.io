@@ -1,0 +1,23 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Notes from Sticky Weather</title>
+    <link>{{ site.url }}</link>
+    <description>Short notes and social posts</description>
+
+    {% for note in site.notes limit:20 %}
+    <item>
+      <title>{{ note.content | strip_html | truncate: 80 }}</title>
+      <link>{{ site.url }}{{ note.url }}</link>
+      <guid>{{ site.url }}{{ note.url }}</guid>
+      <pubDate>{{ note.date | date_to_rfc822 }}</pubDate>
+      <description><![CDATA[
+        {{ note.content }}
+      ]]></description>
+    </item>
+    {% endfor %}
+  </channel>
+</rss>
