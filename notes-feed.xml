@@ -16,7 +16,7 @@ permalink: /notes/feed.xml
       <guid>{{ site.url }}{{ note.url }}</guid>
       <pubDate>{{ note.date | date_to_rfc822 }}</pubDate>
       <description><![CDATA[
-        {{ note.content }}
+        {{ note.content | strip_html }}
       ]]></description>
       {%- if note.mf-photo -%}
         {%- for mf-photo in note.mf-photo -%}
