@@ -11,7 +11,7 @@ permalink: /notes/feed.xml
 
     {% for note in site.notes limit:20 %}
     <item>
-      <title>{{ note.content | strip_html | truncate: 80 }}</title>
+      <title>{{ note.content | strip_html }}</title>
       <link>{{ site.url }}{{ note.url }}</link>
       <guid>{{ site.url }}{{ note.url }}</guid>
       <pubDate>{{ note.date | date_to_rfc822 }}</pubDate>
